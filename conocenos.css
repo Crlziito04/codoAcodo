@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Montserrat, sans-serif;
+}
+h1{
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 400;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px;
+    text-align: center;
+}
+body p{
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+}
+.nosotros{
+    background-color: #f5daca;
+}
+section{
+    padding: 50px;
+}
+section p{
+    line-height: 1.8;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+.nosotros ul{
+    padding-left: 30px;
+}
+.nosotros ul li{
+    font-weight: 400;
+    font-size: 18px;
+}
+.nosotros ul li p{
+    font-weight: 100;
+    font-size: 15px;
+}
+.img{  
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0;
+    border-radius: 50%;
+}
+.rosario{
+    background-image: url(img/Rosario_Gonzalez.jpg);
+}
+.yasmin{
+    background-image: url(img/Yasmin_Alvaro.jpg);
+}
+.federico{
+    background-image: url(img/Federico_Cuenca.jpg);
+}
+.debora{
+    background-image: url(img/Debora_Cherem.jpg);
+}
