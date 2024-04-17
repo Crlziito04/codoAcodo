@@ -1,8 +1,4 @@
-
-/*Generales*/
-
-* {
-
+*{
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
     font-style: normal;
@@ -17,15 +13,6 @@
         font-family: "raleway";
     }
     
-    .container {
-        height: auto;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        border-radius: 10px;
-        background-color: white;
-    }
     
     h1::selection{
         background-color: crimson;
@@ -36,9 +23,7 @@
     p::selection{
         background-color: crimson;
     }
-    
-    /*-------------------------------------------------- */
-    
+
     /*HEADER*/
     
     header {
@@ -76,33 +61,82 @@
     
     }
     
-    /* END HEADER*/
-    
-    /*-------------------------------------------------- */
-    
-    /*MAIN*/
-    
-    .main {
-        padding: 10px;
-        background-color: #f5daca;
-    
-    }
-    .main h1{
-        text-align: center;
-    }
-    
-    .main_container{
-        margin-bottom: -10rem;
-    }
+/* END HEADER*/
 
-    
-    /* END MAIN*/
-    
-    /*-------------------------------------------------- */
-    
-    /*FOOTER*/
-    .footer {
+/*-------------------------------------------------- */
+
+/*MAIN*/
+
+.main {
+    padding: 10px;
+    background-color: #f5daca;
+
+}
+.main h1{
+    text-align: center;
+}
+
+h1{
+    line-height: 1.1;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px;
+    text-align: center;
+}
+body p{
+    color: #111111;
+}
+.nosotros{
+    background-color: #f5daca;
+}
+section{
+   /* padding: 50px; */
+}
+section p{
+    line-height: 1.8;
+}
+
+.nosotros ul{
+    padding-left: 30px;
+}
+.nosotros ul li{
+    font-weight: 400;
+    font-size: 18px;
+}
+.nosotros ul li p{
+    font-weight: 100;
+    font-size: 15px;
+}
+.img{  
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: 0;
+    border-radius: 50%;
+}
+.rosario{
+    background-image: url(../img/Rosario_Gonzalez.jpg);
+}
+.yasmin{
+    background-image: url(../img/Yasmin_Alvaro.jpg);
+}
+.federico{
+    background-image: url(../img/Federico_Cuenca.jpg);
+}
+.debora{
+    background-image: url(../img/Debora_Cherem.jpg);
+}
+/*FOOTER*/
+   .footer {
         padding: 10px;
     }
     
-    /* END FOOTER*/
+/* END FOOTER*/

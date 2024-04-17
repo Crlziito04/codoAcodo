@@ -107,19 +107,11 @@
     
     /* END FOOTER*/
 
-
-*{
-    margin: 0;
-    padding: 0;
-    /*border: 1px solid red;*/
-}
-
 h1{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0px;
-    font-size: 40px;
 }
 
 article{
