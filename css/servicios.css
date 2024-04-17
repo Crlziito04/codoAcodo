@@ -1,0 +1,191 @@
+
+/*Generales*/
+
+* {
+
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-family:'Times New Roman', Times, serif
+    }
+      
+      h1{
+        font-family: "Pinyon Script";
+        font-size: 72px;
+      }
+      p, a, h2, h3, h4, ul, li{
+        font-family: "raleway";
+    }
+    
+    .container {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    h1::selection{
+        background-color: crimson;
+    }
+    a::selection{
+        background-color: crimson;
+    }
+    p::selection{
+        background-color: crimson;
+    }
+    
+    /*-------------------------------------------------- */
+    
+    /*HEADER*/
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 50px;
+        border-radius: 999px;
+    }
+    
+    .menu {
+        list-style-type: none;
+        color: black;
+    }
+    
+    .menu li {
+        display: inline;
+    
+    }
+    .menu a{
+        padding: 10px;
+    }
+    
+    a:hover{
+        color: crimson;
+        background-color: #f5daca;
+        border-radius: 10px;
+    
+    }
+    
+    /* END HEADER*/
+    
+    /*-------------------------------------------------- */
+    
+    /*MAIN*/
+    
+    .main {
+        padding: 10px;
+        background-color: #f5daca;
+    
+    }
+    .main h1{
+        text-align: center;
+    }
+    
+    .main_container{
+        margin-bottom: -10rem;
+    }
+
+    
+    /* END MAIN*/
+    
+    /*-------------------------------------------------- */
+    
+    /*FOOTER*/
+    .footer {
+        padding: 10px;
+    }
+    
+    /* END FOOTER*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+article{
+    display: inline-block;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-color:rgb(189, 176, 187);
+    border-style: groove;
+    letter-spacing:5px;
+    background-color: beige;
+}
+
+.intro{
+    
+    text-align: center;
+    color: rgb(95, 64, 89);
+    background-color: rgb(218, 218, 200);
+    padding: 10px;
+    margin: 10px;
+    
+}
+p{
+    text-align:left;
+    background-color: beige;
+}
+
+#card{
+    width: 250px;
+    padding: 20px;
+    border: 2px solid rgb(145, 145, 122);
+    margin: 10px;
+    border-radius: 8px;
+    color: black;
+    font-size: 1em;
+    
+}
+
+.imagencard{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.titulo_tarjeta{
+    width: auto;
+    color: rgb(95, 64, 89);
+    border-color: beige;
+    border-style: groove;
+    margin: auto;
+    padding:10px;
+    text-align: center; 
+    letter-spacing:10px;
+    background-color: beige;
+}
+
+#rejuvenecimiento{
+    letter-spacing:5px;
+}
+
+#contorno{
+    letter-spacing:5px;
+}
+
+

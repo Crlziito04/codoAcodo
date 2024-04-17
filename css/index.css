@@ -1,0 +1,148 @@
+
+/*Generales*/
+
+* {
+
+font-family: "Pinyon Script", cursive;
+font-weight: 400;
+font-style: normal;
+font-family:'Times New Roman', Times, serif
+}
+  
+  h1{
+    font-family: "Pinyon Script";
+    font-size: 72px;
+  }
+  p, a, h2, h3, h4, ul, li{
+    font-family: "raleway";
+}
+
+.container {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1::selection{
+    background-color: crimson;
+}
+a::selection{
+    background-color: crimson;
+}
+p::selection{
+    background-color: crimson;
+}
+
+/*-------------------------------------------------- */
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 999px;
+}
+
+.menu {
+    list-style-type: none;
+    color: black;
+}
+
+.menu li {
+    display: inline;
+
+}
+.menu a{
+    padding: 10px;
+}
+
+a:hover{
+    color: crimson;
+    background-color: #f5daca;
+    border-radius: 10px;
+
+}
+
+/* END HEADER*/
+
+/*-------------------------------------------------- */
+
+/*MAIN*/
+
+.main {
+    padding: 10px;
+    background-color: #f5daca;
+
+}
+.main h1{
+    text-align: center;
+}
+
+.main_container{
+    margin-bottom: -10rem;
+}
+.main_box_circle {
+    left: 2rem;
+    border-radius: 999px;
+    position: relative;
+    width: 20%;
+    height: 0;
+    padding-bottom: 20%;
+    border: 1px solid white;
+    background-color: white;
+    overflow: hidden;
+    animation: fadeInDown;
+    animation-duration: 1500ms;
+}
+
+.main_box_img {
+    object-fit: fill;
+    position: relative;
+    top: -7rem;
+    left: 7rem;
+    /*Appearence
+    border: 1px solid white;
+    */
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+.main_box_img img {
+    max-width: 70%;
+}
+
+.main_box_text {
+    position: relative;
+    top: -13rem;
+    left: 20rem;
+    max-width: 50%;
+    border: 1px solid white;
+    background-color: white;
+    overflow: hidden;
+    animation: flipInX;
+    animation-duration: 1500ms;
+}
+
+/* END MAIN*/
+
+/*-------------------------------------------------- */
+
+/*FOOTER*/
+.footer {
+    padding: 10px;
+}
+
+/* END FOOTER*/
