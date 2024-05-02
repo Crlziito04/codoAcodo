@@ -1,22 +1,31 @@
-
 /*Generales*/
 
 * {
-
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
     font-style: normal;
     font-family:'Times New Roman', Times, serif
     }
-      
-      h1{
-        font-family: "Pinyon Script";
-        font-size: 72px;
-      }
-      p, a, h2, h3, h4, ul, li{
-        font-family: "raleway";
-    }
     
+html{
+    scroll-behavior: smooth;/*me permite navegar de manera suave, la transicion es suave*/
+}
+    
+
+h1{ /*titulo Nuestros tratamientos esteticos*/
+    font-family: "Pinyon Script";
+    font-size: 72px;
+}
+
+p, a, h2, h3, h4, ul, li{
+    font-family: "raleway";
+}
+
+   
+   
+
+
+    /*
     .container {
         height: auto;
         padding: 10px;
@@ -24,7 +33,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         border-radius: 10px;
-        background-color: white;
+        background-color: white
     }
     
     h1::selection{
@@ -36,148 +45,228 @@
     p::selection{
         background-color: crimson;
     }
-    
-    /*-------------------------------------------------- */
-    
-    /*HEADER*/
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .logo {
-        width: 50px;
-        border-radius: 999px;
-    }
-    
-    .menu {
-        list-style-type: none;
-        color: black;
-    }
-    
-    .menu li {
-        display: inline;
-    
-    }
-    .menu a{
-        padding: 10px;
-    }
-    
-    a:hover{
-        color: crimson;
-        background-color: #f5daca;
-        border-radius: 10px;
-    
-    }
-    
-    /* END HEADER*/
-    
-    /*-------------------------------------------------- */
-    
-    /*MAIN*/
-    
-    .main {
-        padding: 10px;
-        background-color: #f5daca;
-    
-    }
-    .main h1{
-        text-align: center;
-    }
-    
-    .main_container{
-        margin-bottom: -10rem;
-    }
+    */
 
-    
-    /* END MAIN*/
-    
-    /*-------------------------------------------------- */
-    
-    /*FOOTER*/
-    .footer {
-        padding: 10px;
-    }
-    
-    /* END FOOTER*/
 
-h1{
+
+/*DEFINO ESTILO DE BOTON con class"button":aplicable a cualquier etiqueta link*/
+.button{ 
+    background-color: rgb(92, 88, 92); 
+    color: rgb(238, 229, 217);
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0px;
+    padding: 4px; 
+    
+    border-radius: 3px;/*a mayor numero lo hace redondo*/
+    border: 3px solid rgb(129, 111, 125);
+   
+    transition: 0.2s all;
+
+    box-shadow: 3px 3px 3px rgb(0,0,0, 0.3);
 }
 
-article{
-    display: inline-block;
-    text-align: center;
-}
+.button:hover{
+    background-color:#f5daca;
+    color: rgb(83, 79, 69); 
+}  
 
-h2{
-    text-align: center;
+
+
+/*-------------------------------------------------- */
+/*HEADER NO TOCAR*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
     padding: 10px;
-    margin: 10px;
-    border-color:rgb(189, 176, 187);
-    border-style: groove;
-    letter-spacing:5px;
-    background-color: beige;
 }
 
-.intro{
-    
-    text-align: center;
-    color: rgb(95, 64, 89);
-    background-color: rgb(218, 218, 200);
-    padding: 10px;
-    margin: 10px;
-    
-}
-p{
-    text-align:left;
-    background-color: beige;
+.logo {
+    width: 50px;
+    border-radius: 999px;
 }
 
-#card{
-    width: 250px;
-    padding: 20px;
-    border: 2px solid rgb(145, 145, 122);
-    margin: 10px;
-    border-radius: 8px;
+.menu {
+    list-style-type: none;
     color: black;
-    font-size: 1em;
-    
 }
 
-.imagencard{
-    width: 100%;
+.menu li {
+    display: inline;
+
+}
+.menu a{ /*hipervinculos*/
+    padding: 10px;
+}
+
+a:hover{
+    color: crimson;
+    background-color: #f5daca;
+    border-radius: 10px;
+
+}   
+    
+/* END HEADER NO TOCAR*/
+    
+/*-------------------------------------------------- */
+
+/*MAIN*/
+.main {
+    padding: 15Px;
+    background-color: #f5daca;    
+}
+
+.main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
     text-align: center;
+    padding: 15px 0px;    
+    margin: 0px;
+    background-color:#f5daca;
+}
     
+/*MAIN: tarjetas de presentacion*/
+.main .presentacion{ /*padre contenedor*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px ; /* separo las cajas de producto de arriba y abajo*/
+    background-color: rgb(245, 245, 222)
+}   
+
+.main .presentacion article{   /*diseño de cada etiqueta article*/
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;/*le indico column ya que el articulo tiene imagen, titulo y descripcion*/    
 }
 
-.titulo_tarjeta{
+.main .presentacion article img{ /*imagen de los articulos*/
+    width: 300px;
+}
+
+.main .presentacion article a{ /*hipervinculos*/
+   text-decoration: none;
+}
+
+.main .presentacion article a h2{ /*subtitulo de los articulos*/
+    font-size: 1.2em;
+    padding: 6px 10px; /*10px arriba/abajo y 20px a los costados*/
+       
+}
+
+.main .presentacion article p{
+    text-align: center;
+    padding: 10px;
+    margin-right: 3px;
+    color:  black;
+}
+
+
+
+
+
+.facial h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+    border-color:rgb(189, 176, 187);
+    border-style: double;
+    letter-spacing:5px;
+    background-color: rgb(65, 62, 65); 
+    color:rgb(238, 229, 217);
+    
+}
+.contenedor_facial {
+    display: flex;
+    flex-direction: column;
+    
+    background-color:#f5daca;
+}
+    
+article #Card .titulo_tarjeta{
     width: auto;
     color: rgb(95, 64, 89);
-    border-color: beige;
-    border-style: groove;
+    
     margin: auto;
     padding:10px;
     text-align: center; 
     letter-spacing:10px;
-    background-color: beige;
+    background-color: white;
+}
+article #Card{
+    display: flex;
+    width: 90vw;
+    padding: 15px;
+    border: 3px solid rgb(145, 145, 122);
+    margin: 10px;
+    border-radius: 8px;
+    color: black;
+    font-size: 1em;        
+}
+        
+article #Card img{
+    width: 20%;
+    border: 3px solid rgb(145, 145, 122);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    position: relative; 
+
+}
+   
+
+article #Card p{  /*texto tarjeta*/
+    text-align:left;
+    padding-left: 5px;
+
 }
 
-#rejuvenecimiento{
-    letter-spacing:5px;
+#Card div {
+    position: relative;
+
+}
+article #Card a{  /*hipervinculo:solicitar turno*/
+    position: absolute;
+    
+    right: 5px;
+    bottom: 2px;
+}
+    
+
+    
+   
+
+    /* END MAIN*/
+    
+    /*-------------------------------------------------- */
+    
+   
+/*FOOTER*/
+footer{ /*Al padre le doy display:flex*/
+    color:rgb(66, 66, 58) ;
+    background-color: white;
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
 }
 
-#contorno{
-    letter-spacing:5px;
+footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+    font-size: 1.5em ;
 }
 
+footer .redes i{ /*cambio el color de los iconos redes*/
+   color:rgb(145, 99, 134);
 
+   transition: 0.2 all;
+}
+footer .redes i:hover{
+    color: rgb(110, 110, 92);
+}
+ /* END FOOTER*/
