@@ -123,16 +123,16 @@ section p{
     border-radius: 50%;
 }
 .rosario{
-    background-image: url(../img/Rosario_Gonzalez.jpg);
+    background-image: url(../img/profesionales/Rosario_Gonzalez.jpg);
 }
 .yasmin{
-    background-image: url(../img/Yasmin_Alvaro.jpg);
+    background-image: url(../img/profesionales/Yasmin_Alvaro.jpg);
 }
 .federico{
-    background-image: url(../img/Federico_Cuenca.jpg);
+    background-image: url(../img/profesionales/Federico_Cuenca.jpg);
 }
 .debora{
-    background-image: url(../img/Debora_Cherem.jpg);
+    background-image: url(../img/profesionales/Debora_Cherem.jpg);
 }
 /*FOOTER*/
    .footer {
