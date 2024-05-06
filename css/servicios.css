@@ -118,7 +118,7 @@ a:hover{
     background-color: #f5daca;    
 }
 
-.main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
+.main h1{   /*color de fondo TITULO:Nuestros tratamientos esteticos*/
     text-align: center;
     padding: 15px 0px;    
     margin: 0px;
@@ -171,6 +171,8 @@ a:hover{
 
 
 
+
+/*PREGUNTAR PORQUE NO PUEDO AGRUPAR PARA APLICAR ESTILOS*/
 
 .facial h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
     text-align: center;
@@ -239,8 +241,32 @@ article #Card a{  /*hipervinculo:solicitar turno*/
 }
     
 
-    
-   
+
+
+
+.corporal h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+    border-color:rgb(189, 176, 187);
+    border-style: double;
+    letter-spacing:5px;
+    background-color: rgb(65, 62, 65); 
+    color:rgb(238, 229, 217);    
+}
+
+
+.aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+    border-color:rgb(189, 176, 187);
+    border-style: double;
+    letter-spacing:5px;
+    background-color: rgb(65, 62, 65); 
+    color:rgb(238, 229, 217);    
+}
+
 
     /* END MAIN*/
     
