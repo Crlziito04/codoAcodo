@@ -21,6 +21,12 @@ font-family:'Times New Roman', Times, serif
 h1::selection{
     background-color: crimson;
 }
+h2::selection{
+    background-color: crimson;
+}
+h2::selection{
+    background-color: crimson;
+}
 a::selection{
     background-color: crimson;
 }
@@ -132,8 +138,25 @@ a:hover{
 /*-------------------------------------------------- */
 
 /*FOOTER*/
-.footer {
-    padding: 10px;
+footer{ /*Al padre le doy display:flex*/
+    color:rgb(66, 66, 58) ;
+    background-color: white;
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
 }
 
+footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+    font-size: 1.5em ;
+}
+
+footer .redes i{ /*cambio el color de los iconos redes*/
+   color:rgb(145, 99, 134);
+
+   transition: 0.2 all;
+}
+footer .redes i:hover{
+    color: rgb(110, 110, 92);
+}
 /* END FOOTER*/
