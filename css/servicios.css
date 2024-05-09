@@ -108,8 +108,7 @@ a:hover{
 
 }   
     
-/* END HEADER NO TOCAR*/
-    
+/* END HEADER NO TOCAR*/    
 /*-------------------------------------------------- */
 
 /*MAIN*/
@@ -137,14 +136,14 @@ a:hover{
     background-color: rgb(245, 245, 222)
 }   
 
-.main .presentacion article{   /*diseño de cada etiqueta article*/
+.main .presentacion article{  /*diseño de cada etiqueta article*/
     width: 300px;
     background-color: white;
     padding: 20px;
     margin: 10px;
 
     display: flex;
-    flex-direction: column;/*le indico column ya que el articulo tiene imagen, titulo y descripcion*/    
+    flex-direction: column;/*le indico column ya que el articulo va hacia abajo: con imagen, titulo y descripcion*/    
 }
 
 .main .presentacion article img{ /*imagen de los articulos*/
@@ -152,12 +151,12 @@ a:hover{
 }
 
 .main .presentacion article a{ /*hipervinculos*/
-   text-decoration: none;
+   text-decoration: none;  
 }
 
 .main .presentacion article a h2{ /*subtitulo de los articulos*/
-    font-size: 1.2em;
-    padding: 6px 10px; /*10px arriba/abajo y 20px a los costados*/
+    font-size: 1.1em;
+    padding: 6px 5px; /*6px arriba/abajo y 5px a los costados*/
        
 }
 
@@ -172,9 +171,7 @@ a:hover{
 
 
 
-/*PREGUNTAR PORQUE NO PUEDO AGRUPAR PARA APLICAR ESTILOS*/
-
-.facial h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+.facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
     text-align: center;
     padding: 25px;
     margin: 0px;
@@ -191,8 +188,14 @@ a:hover{
     
     background-color:#f5daca;
 }
-    
-article #Card .titulo_tarjeta{
+
+.contenedor_facial article, .contenedor_corporal article, .contenedor_aparatologia article{/*con justify;center, centro los elementos/articulos en el contenedor facial*/
+    display: flex;
+    justify-content: center;
+
+}
+   
+article #Card .titulo_tarjeta{/*nombre de cada tratamiento*/
     width: auto;
     color: rgb(95, 64, 89);
     
@@ -202,6 +205,7 @@ article #Card .titulo_tarjeta{
     letter-spacing:10px;
     background-color: white;
 }
+
 article #Card{
     display: flex;
     width: 90vw;
@@ -210,7 +214,8 @@ article #Card{
     margin: 10px;
     border-radius: 8px;
     color: black;
-    font-size: 1em;        
+    font-size: 1em;  
+          
 }
         
 article #Card img{
@@ -219,6 +224,7 @@ article #Card img{
     border-top-left-radius: 10px;
     border-bottom-left-radius:10px;
     position: relative; 
+    align-self: center;/*propiedad de flex que evita que la imagen se desforme al achicarse el viewport*/
 
 }
    
@@ -233,7 +239,7 @@ article #Card p{  /*texto tarjeta*/
     position: relative;
 
 }
-article #Card a{  /*hipervinculo:solicitar turno*/
+article #Card a{  /*hipervinculo:solicitar mas informacion*/
     position: absolute;
     
     right: 5px;
@@ -244,33 +250,95 @@ article #Card a{  /*hipervinculo:solicitar turno*/
 
 
 
-.corporal h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
-    text-align: center;
-    padding: 25px;
-    margin: 0px;
-    border-color:rgb(189, 176, 187);
-    border-style: double;
-    letter-spacing:5px;
-    background-color: rgb(65, 62, 65); 
-    color:rgb(238, 229, 217);    
-}
 
 
-.aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
-    text-align: center;
-    padding: 25px;
-    margin: 0px;
-    border-color:rgb(189, 176, 187);
-    border-style: double;
-    letter-spacing:5px;
-    background-color: rgb(65, 62, 65); 
-    color:rgb(238, 229, 217);    
-}
 
 
-    /* END MAIN*/
+/*MEDIA QUERIES*/
+/*Para dispositivos mobiles de hasta 600px*/
+@media only screen and (max-width:600px){
+    header{
+        background-color:  rgb(245, 245, 222);
+        font-size: 1em;
+    }
+    header, main, footer{
+        padding: 5px; /*se usa entre dispositivos*/
+    }
+    body{
+        font-size: 14px;/*se usa entre dispositivos*/
+    }
+    .main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
+        text-align: center;
+        padding: 10px 0px;    
+        margin: 0px;
+        background-color:#f5daca;
+        font-size: 3.2em;
+    }
+      
+    .main .presentacion{ /*padre contenedor*/
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px ; /* separo las cajas de producto de arriba y abajo*/
+        background-color: beige;
+    } 
+    .main .presentacion article{ /*reacomodo las 3tarjetas colocandolas una debajo de la otra con display block y que ocupen el 80% del viewport*/
+        width: 80%;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+    }
+    .main .presentacion article a{ /*hipervinculos*/
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .main .presentacion article a h2{ /*subtitulo de los articulos VER COMO HACER PARA QUE NO SALGAN DE SU CAJA*/
+        font-size: 1.3em;
+        background-color: rgb(92, 88, 92);
+   
+           
+    }
+
+    .main .presentacion article img{ /*imagen de los articulos*/
+        width: 200px;
+    }
     
-    /*-------------------------------------------------- */
+    article #Card{
+        display: flex;
+        width: 75vw;
+        padding: 5px;
+        border: 5px solid rgb(145, 145, 122);
+        margin: 10px;
+        border-radius: 8px;
+        color: black;
+        font-size: 1em;  
+        flex-direction: column;/*indico como quiero que se ubiquen los articulos en columnas uno debajo del otro*/
+              
+    }
+    article #Card img{
+        width: 80%;
+        border-radius:10px;
+    
+    }
+    article #Card a{  /*hipervinculo:solicitar mas informacion*/
+        position: absolute;
+        
+        right: 1px;
+        bottom: -16px;
+    }
+   
+}   
+
+
+
+
+/* END MAIN*/
+    
+/*-------------------------------------------------- */
     
    
 /*FOOTER*/
