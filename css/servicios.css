@@ -363,4 +363,15 @@ footer .redes i{ /*cambio el color de los iconos redes*/
 footer .redes i:hover{
     color: rgb(110, 110, 92);
 }
+
+
+/*boton Volver a inicio*/
+footer a:hover{
+    color: crimson;
+    background-color: #f5daca;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
  /* END FOOTER*/
