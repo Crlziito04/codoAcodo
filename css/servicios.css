@@ -84,7 +84,7 @@ header {
 }
 
 .logo {
-    width: 50px;
+    width: 80px;
     border-radius: 999px;
 }
 
@@ -117,7 +117,7 @@ a:hover{
     background-color: #f5daca;    
 }
 
-.main h1{   /*color de fondo TITULO:Nuestros tratamientos esteticos*/
+.main h1{   /* TITULO principal:Nuestros tratamientos esteticos*/
     text-align: center;
     padding: 15px 0px;    
     margin: 0px;
@@ -150,7 +150,7 @@ a:hover{
     width: 300px;
 }
 
-.main .presentacion article a{ /*hipervinculos*/
+.main .presentacion article a{ /*hipervinculos de las etiquetas principales*/
    text-decoration: none;  
 }
 
@@ -171,6 +171,7 @@ a:hover{
 
 
 
+
 .facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
     text-align: center;
     padding: 25px;
@@ -182,6 +183,7 @@ a:hover{
     color:rgb(238, 229, 217);
     
 }
+
 .contenedor_facial {
     display: flex;
     flex-direction: column;
@@ -194,17 +196,7 @@ a:hover{
     justify-content: center;
 
 }
-   
-article #Card .titulo_tarjeta{/*nombre de cada tratamiento*/
-    width: auto;
-    color: rgb(95, 64, 89);
-    
-    margin: auto;
-    padding:10px;
-    text-align: center; 
-    letter-spacing:10px;
-    background-color: white;
-}
+
 
 article #Card{
     display: flex;
@@ -215,19 +207,29 @@ article #Card{
     border-radius: 8px;
     color: black;
     font-size: 1em;  
+    
           
 }
-        
 article #Card img{
     width: 20%;
     border: 3px solid rgb(145, 145, 122);
     border-top-left-radius: 10px;
     border-bottom-left-radius:10px;
-    position: relative; 
+    /*position: relative;*/ 
     align-self: center;/*propiedad de flex que evita que la imagen se desforme al achicarse el viewport*/
 
 }
-   
+
+article #Card .titulo_tarjeta{/*h3:subtitulo de cada tratamiento*/
+    width: auto;
+    color: rgb(95, 64, 89);
+    
+    margin: auto;
+    padding:10px;
+    text-align: center; 
+    letter-spacing:10px;
+    background-color: white;
+}
 
 article #Card p{  /*texto tarjeta*/
     text-align:left;
@@ -235,15 +237,14 @@ article #Card p{  /*texto tarjeta*/
 
 }
 
-#Card div {
-    position: relative;
-
+#Card{ /* posiciono al padre con position: relative para poder ubicar al hijo:a (hipervinculo) con position absolute*/
+    position: relative; 
 }
-article #Card a{  /*hipervinculo:solicitar mas informacion*/
+article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con position absolute. Le pongo a su padre position relative para poder posicionar al hijo*/
     position: absolute;
     
     right: 5px;
-    bottom: 2px;
+    bottom: 10px;
 }
     
 
@@ -262,79 +263,95 @@ article #Card a{  /*hipervinculo:solicitar mas informacion*/
         font-size: 1em;
     }
     header, main, footer{
-        padding: 5px; /*se usa entre dispositivos*/
+        padding: 5px; 
     }
     body{
-        font-size: 14px;/*se usa entre dispositivos*/
+        font-size: 14px;
     }
     .main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
-        text-align: center;
         padding: 10px 0px;    
-        margin: 0px;
-        background-color:#f5daca;
-        font-size: 3.2em;
-    }
-      
+        font-size: 2.5em;
+    } 
     .main .presentacion{ /*padre contenedor*/
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        
-        flex-direction: row;
-        flex-wrap: wrap;
         padding: 5px ; /* separo las cajas de producto de arriba y abajo*/
         background-color: beige;
     } 
-    .main .presentacion article{ /*reacomodo las 3tarjetas colocandolas una debajo de la otra con display block y que ocupen el 80% del viewport*/
+    .main .presentacion article{ /*las tarjetas ocupan el 80% del viewport*/
         width: 80%;
         display: flex;
-        margin: 10px;
         padding: 10px;
+    }
+    .main .presentacion article img{ /*imagen de los articulos*/
+        width: 200px;
     }
     .main .presentacion article a{ /*hipervinculos*/
         margin: 0px;
         padding: 0px;
     }
-
-    .main .presentacion article a h2{ /*subtitulo de los articulos VER COMO HACER PARA QUE NO SALGAN DE SU CAJA*/
+    .main .presentacion article a h2{ /*subtitulo de los articulos*/
         font-size: 1.3em;
-        background-color: rgb(92, 88, 92);
-   
-           
+        background-color: rgb(92, 88, 92);       
     }
-
-    .main .presentacion article img{ /*imagen de los articulos*/
-        width: 200px;
-    }
-    
     article #Card{
-        display: flex;
         width: 75vw;
         padding: 5px;
         border: 5px solid rgb(145, 145, 122);
-        margin: 10px;
-        border-radius: 8px;
-        color: black;
-        font-size: 1em;  
-        flex-direction: column;/*indico como quiero que se ubiquen los articulos en columnas uno debajo del otro*/
-              
+       
+        flex-direction: column;/*indico como quiero que se ubiquen los articulos: en columnas uno debajo del otro*/          
     }
-    article #Card img{
+    article #Card img{ /*foto de cada tarjeta*/
         width: 80%;
         border-radius:10px;
-    
     }
-    article #Card a{  /*hipervinculo:solicitar mas informacion*/
+    article #Card .titulo_tarjeta{/*h3:subtitulo de cada tratamiento*/
+        letter-spacing:4px;    
+    }
+    article #Card a{  /*hipervinculo: solicitar mas informacion*/
         position: absolute;
+        bottom: -15px;
+    } 
+    .logo { /*logo empresa*/
+        width: 70px;
         
-        right: 1px;
-        bottom: -16px;
-    }
-   
+    } 
 }   
 
 
+/*Para dispositivos del al menos 600px como minimo: notebooks*/
+@media only screen and (min-width:600px){
+    article #Card img{ /*foto de cada tarjeta*/
+        width: 40%;    
+    }
+    article #Card a{  /*hipervinculo:solicitar mas informacion*/
+        position: absolute;
+        bottom: -10px;   
+    }
+    .facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+        font-size: 20px;
+         
+    }
+    .logo { /*logo empresa*/
+        width: 70px;
+        
+    }
+}
 
+
+/*Para dispositivos del al menos 1000px como minimo, es decir 1000px en adelante monitores grandes*/
+@media only screen and (min-width:1000px){
+    article #Card img{
+        width: 20%;   
+    }
+    article #Card a{  /*hipervinculo:solicitar mas informacion*/
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+    }
+    .logo { /*logo empresa*/
+        width: 85px;
+        
+}
+ 
 
 /* END MAIN*/
     
@@ -347,9 +364,11 @@ footer{ /*Al padre le doy display:flex*/
     background-color: white;
     
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; 
     align-items: center;   
 }
+
 
 footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
     font-size: 1.5em ;
@@ -365,13 +384,14 @@ footer .redes i:hover{
 }
 
 
-/*boton Volver a inicio*/
-footer a:hover{
+/*boton Volver a inicio: mismos estilos que el nav*/
+footer div a:hover{
     color: crimson;
     background-color: #f5daca;
     border-radius: 10px;
-    padding: 10px;
-
+    padding: 10px;    
 }
 
  /* END FOOTER*/
+
+
