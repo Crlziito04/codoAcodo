@@ -1,4 +1,4 @@
-fetch("https://github.com/Crlziito04/codoAcodo/script/data.js")
+fetch("https://github.com/Crlziito04/codoAcodo/script/data.json")
   .then(response => {
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
