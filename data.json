@@ -1,20 +1,19 @@
-[{
-  "nombre": "Aceite Facial Antioxidante",
-  "marca": "Carpe Diem",
-  "modo de uso": "Aplicar de 1 a 2 gotas sobre el rostro limpio. Con las manos higienizadas, distribuir sobre frente, mejillas, barbilla y cuello. Masajear con la yema de los dedos.",
-  "precio": 37000
-},
+[
+  {
+    "nombre": "Tratamientos Faciales",
+    "img": "https://i.ibb.co/Rhwh3kN/presentacion-TF.png",
+    "descripcion": "Nuestros tratamientos faciales médico-estéticos no invasivos te ayudarán a recuperar la luminosidad de tu piel y rostro. Todos ellos surgen a partir de un diagnóstico previo."
+  },
 
-{
-  "nombre": "Crema Corporal.Body Milk",
-  "marca": "Carpe Diem",
-  "modo de uso": "Aplicar en todo el cuerpo la cantidad suficiente según necesidad. Masajear suavemente sobre la piel limpia hasta su  completa absorción. Se recomienda su uso después del baño o la ducha, hasta dos veces al día.",
-  "precio": 35000
-},
+  {
+    "nombre": "Tratamientos Corporales",
+    "img": "https://i.ibb.co/wz4GBD7/presentacion-TA.png",
+    "descripcion": "Aplicamos las mejores técnicas y equipamiento de estética no invasiva. Siempre realizamos un diagnóstico previo para identificar la aplicación mas adecuada a la afección."
+  },
 
-{
-  "nombre": "Contorno de Ojos.Eye Cream.",
-  "marca": "Carpe Diem",
-  "modo de uso": "Con las manos higienizadas, aplicar sobre el dedo anular y dar suaves toquecitos hasta que absorba, sin frotar ni estirar debajo y a lo largo del ojo. No se recomienda aplicar en el párpado superior. Utilizar hasta 2 veces por día.",
-  "precio": 29000
-}]
+  {
+    "nombre": "Tratamientos de Aparatología Estética.",
+    "img": "https://i.ibb.co/ZK04HsX/presentacion-TC.png",
+    "descripcion": "Empleamos los mejores equipos y las tecnologías mas avanzadas. Esto nos permite abarcar todas las áreas del cuerpo y sus problemáticas, brindando a nuestros clienes el mejor tratamiento."
+  }
+]
