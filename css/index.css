@@ -160,3 +160,100 @@ footer .redes i:hover{
     color: rgb(110, 110, 92);
 }
 /* END FOOTER*/
+
+/*MEDIA QUERIES*/
+/*Para dispositivos mobiles de hasta 600px*/
+@media only screen and (max-width:600px){
+    header{
+        background-color:  rgb(245, 245, 222);
+        font-size: 1em;
+    }
+    header, main, footer{
+        padding: 5px; 
+    }
+    body{
+        font-size: 14px;
+    }
+    .main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
+        padding: 10px 0px;    
+        font-size: 2.5em;
+    } 
+    .main .presentacion{ /*padre contenedor*/
+        padding: 5px ; /* separo las cajas de producto de arriba y abajo*/
+        background-color: beige;
+    } 
+    .main .presentacion article{ /*las tarjetas ocupan el 80% del viewport*/
+        width: 80%;
+        display: flex;
+        padding: 10px;
+    }
+    .main .presentacion article img{ /*imagen de los articulos*/
+        width: 200px;
+    }
+    .main .presentacion article a{ /*hipervinculos*/
+        margin: 0px;
+        padding: 0px;
+    }
+    .main .presentacion article a h2{ /*subtitulo de los articulos*/
+        font-size: 1.3em;
+        background-color: rgb(92, 88, 92);       
+    }
+    article #Card{
+        width: 75vw;
+        padding: 5px;
+        border: 5px solid rgb(145, 145, 122);
+       
+        flex-direction: column;/*indico como quiero que se ubiquen los articulos: en columnas uno debajo del otro*/          
+    }
+    article #Card img{ /*foto de cada tarjeta*/
+        width: 80%;
+        border-radius:10px;
+    }
+    article #Card .titulo_tarjeta{/*h3:subtitulo de cada tratamiento*/
+        letter-spacing:4px;    
+    }
+    article #Card a{  /*hipervinculo: solicitar mas informacion*/
+        position: absolute;
+        bottom: -15px;
+    } 
+    .logo { /*logo empresa*/
+        width: 70px;
+        
+    } 
+}   
+
+
+/*Para dispositivos del al menos 600px como minimo: notebooks*/
+@media only screen and (min-width:600px){
+    article #Card img{ /*foto de cada tarjeta*/
+        width: 40%;    
+    }
+    article #Card a{  /*hipervinculo:solicitar mas informacion*/
+        position: absolute;
+        bottom: -10px;   
+    }
+    .facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+        font-size: 20px;
+         
+    }
+    .logo { /*logo empresa*/
+        width: 70px;
+        
+    }
+}
+
+
+/*Para dispositivos del al menos 1000px como minimo, es decir 1000px en adelante monitores grandes*/
+@media only screen and (min-width:1000px){
+    article #Card img{
+        width: 20%;   
+    }
+    article #Card a{  /*hipervinculo:solicitar mas informacion*/
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+    }
+    .logo { /*logo empresa*/
+        width: 85px;
+        
+}
