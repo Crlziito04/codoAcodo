@@ -1,5 +1,4 @@
 /*Generales*/
-
 * {
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
@@ -26,6 +25,7 @@ button {
 }
 h3 {
   font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 h1::selection {
@@ -41,7 +41,6 @@ p::selection {
 /*-------------------------------------------------- */
 
 /*HEADER*/
-
 header {
   display: flex;
   justify-content: space-between;
@@ -89,6 +88,7 @@ a:hover {
 }
 
 .main {
+  width: 100%;
   padding: 10px;
   background-color: #f5daca;
   display: flex;
@@ -117,10 +117,11 @@ a:hover {
 
 /*FORM*/
 form {
+  width: auto;
+  max-width: 700px;
   border: 1px solid black;
   border-radius: 6px;
   padding: 5px;
-  max-width: 700px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -156,7 +157,7 @@ textarea {
 }
 /*DIVdatos*/
 .divDatos {
-  max-width: 700px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,9 +171,14 @@ textarea {
 }
 .datos .redes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
 }
 /*-------------------------------------------------- */
+
+.divIframe {
+  width: 100%;
+}
 .mapIframe {
   margin-top: 20px;
   width: 350px;
@@ -182,10 +188,8 @@ textarea {
 /*------------------------------------------------*/
 /*FOOTER*/
 footer {
-  /*Al padre le doy display:flex*/
   color: rgb(66, 66, 58);
   background-color: white;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,16 +197,13 @@ footer {
 
 footer .redes,
 .datos .redes {
-  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
   font-size: 1.5em;
 }
 
 footer .redes i,
 .datos .redes i {
-  /*cambio el color de los iconos redes*/
   color: rgb(145, 99, 134);
-
-  transition: 0.2 all;
+  transition: 0.2s all;
 }
 footer .redes i:hover,
 .datos .redes i:hover {
@@ -211,12 +212,13 @@ footer .redes i:hover,
 
 /* END FOOTER*/
 
-@media (width >= 768px) {
+@media (min-width: 768px) {
   .distribuidor {
+    padding-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
   }
 
@@ -224,12 +226,39 @@ footer .redes i:hover,
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    justify-content: space-between;
+    gap: 25px;
+    justify-content: center;
   }
 
+  .divIframe {
+    width: 100%;
+  }
   .mapIframe {
-    width: 710px;
+    width: 100%;
     height: 200px;
+  }
+  main {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    max-height: 805px;
+  }
+  form {
+    padding: 12px;
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .datos {
+    width: 35%;
+    margin-right: 20px;
+  }
+  .datosReserva {
+    width: 100%;
+  }
+}
+@media (min-width: 1080px) {
+  form label input {
+    width: 250px;
   }
 }
