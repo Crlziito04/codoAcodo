@@ -24,15 +24,8 @@ input,
 button {
   font-family: "raleway";
 }
-
-.container {
-  height: auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  border-radius: 10px;
-  background-color: white;
+h3 {
+  font-size: 1.5rem;
 }
 
 h1::selection {
@@ -110,6 +103,15 @@ a:hover {
 .main_container {
   margin-bottom: -10rem;
 }
+.container {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+  background-color: white;
+}
 
 /* END MAIN*/
 
@@ -160,8 +162,24 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+.datosReserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.datos .redes {
+  display: flex;
+  justify-content: space-around;
+}
 /*-------------------------------------------------- */
+.mapIframe {
+  margin-top: 20px;
+  width: 350px;
+  height: 200px;
+}
 
+/*------------------------------------------------*/
 /*FOOTER*/
 footer {
   /*Al padre le doy display:flex*/
@@ -173,18 +191,21 @@ footer {
   align-items: center;
 }
 
-footer .redes {
+footer .redes,
+.datos .redes {
   /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
   font-size: 1.5em;
 }
 
-footer .redes i {
+footer .redes i,
+.datos .redes i {
   /*cambio el color de los iconos redes*/
   color: rgb(145, 99, 134);
 
   transition: 0.2 all;
 }
-footer .redes i:hover {
+footer .redes i:hover,
+.datos .redes i:hover {
   color: rgb(110, 110, 92);
 }
 
@@ -194,8 +215,21 @@ footer .redes i:hover {
   .distribuidor {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     gap: 30px;
+  }
+
+  .divDatos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between;
+  }
+
+  .mapIframe {
+    width: 710px;
+    height: 200px;
   }
 }
