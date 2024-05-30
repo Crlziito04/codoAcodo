@@ -17,7 +17,9 @@ font-family:'Times New Roman', Times, serif
     font-family: "raleway";
 }
 
-
+.p-3{
+    padding: 0 !important;
+}
 h1::selection{
     background-color: crimson;
 }
@@ -39,8 +41,8 @@ p::selection{
 /*HEADER*/
 
 header {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    justify-content: space-between ;
     background-color: white;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -72,7 +74,14 @@ a:hover{
     border-radius: 10px;
 
 }
+.nav-link{
+    display: flex;
+    justify-content: flex-end;
+}
 
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
 /* END HEADER*/
 
 /*-------------------------------------------------- */
@@ -92,7 +101,7 @@ a:hover{
     margin-bottom: -10rem;
 }
 .main_box_circle {
-    left: 2rem;
+    left: 5%;
     border-radius: 999px;
     position: relative;
     width: 20%;
@@ -108,8 +117,8 @@ a:hover{
 .main_box_img {
     object-fit: fill;
     position: relative;
-    top: -7rem;
-    left: 7rem;
+    top: -10rem;
+    left: 15%;
     /*Appearence
     border: 1px solid white;
     */
@@ -123,8 +132,8 @@ a:hover{
 
 .main_box_text {
     position: relative;
-    top: -13rem;
-    left: 20rem;
+    top: -15rem;
+    left: 30%;
     max-width: 50%;
     border: 1px solid white;
     background-color: white;
@@ -163,97 +172,68 @@ footer .redes i:hover{
 
 /*MEDIA QUERIES*/
 /*Para dispositivos mobiles de hasta 600px*/
-@media only screen and (max-width:600px){
-    header{
-        background-color:  rgb(245, 245, 222);
-        font-size: 1em;
-    }
-    header, main, footer{
-        padding: 5px; 
-    }
-    body{
-        font-size: 14px;
-    }
-    .main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
-        padding: 10px 0px;    
-        font-size: 2.5em;
-    } 
-    .main .presentacion{ /*padre contenedor*/
-        padding: 5px ; /* separo las cajas de producto de arriba y abajo*/
-        background-color: beige;
-    } 
-    .main .presentacion article{ /*las tarjetas ocupan el 80% del viewport*/
-        width: 80%;
-        display: flex;
-        padding: 10px;
-    }
-    .main .presentacion article img{ /*imagen de los articulos*/
-        width: 200px;
-    }
-    .main .presentacion article a{ /*hipervinculos*/
-        margin: 0px;
-        padding: 0px;
-    }
-    .main .presentacion article a h2{ /*subtitulo de los articulos*/
-        font-size: 1.3em;
-        background-color: rgb(92, 88, 92);       
-    }
-    article #Card{
-        width: 75vw;
-        padding: 5px;
-        border: 5px solid rgb(145, 145, 122);
-       
-        flex-direction: column;/*indico como quiero que se ubiquen los articulos: en columnas uno debajo del otro*/          
-    }
-    article #Card img{ /*foto de cada tarjeta*/
-        width: 80%;
-        border-radius:10px;
-    }
-    article #Card .titulo_tarjeta{/*h3:subtitulo de cada tratamiento*/
-        letter-spacing:4px;    
-    }
-    article #Card a{  /*hipervinculo: solicitar mas informacion*/
-        position: absolute;
-        bottom: -15px;
-    } 
-    .logo { /*logo empresa*/
-        width: 70px;
-        
-    } 
-}   
+
 
 
 /*Para dispositivos del al menos 600px como minimo: notebooks*/
-@media only screen and (min-width:600px){
-    article #Card img{ /*foto de cada tarjeta*/
-        width: 40%;    
+@media only screen and (max-width:600px){
+    .main_box_img{
+        top: -1rem;
     }
-    article #Card a{  /*hipervinculo:solicitar mas informacion*/
-        position: absolute;
-        bottom: -10px;   
+    .main_box_text {
+        top: -2rem;
     }
-    .facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+    .main_box_text{
+        top: -3rem;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2, h3, h4{
         font-size: 20px;
-         
     }
-    .logo { /*logo empresa*/
-        width: 70px;
-        
+    p{
+        font-size: 12px;
     }
 }
 
 
 /*Para dispositivos del al menos 1000px como minimo, es decir 1000px en adelante monitores grandes*/
-@media only screen and (min-width:1000px){
-    article #Card img{
-        width: 20%;   
+@media only screen and (max-width:800px){
+    .main_box_img{
+        top: -2rem;
     }
-    article #Card a{  /*hipervinculo:solicitar mas informacion*/
-        position: absolute;
-        right: 5px;
-        bottom: 10px;
+    .main_box_text {
+        top: -3rem;
     }
-    .logo { /*logo empresa*/
-        width: 85px;
-        
+    .main_box_text{
+        top: -5rem;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2, h3, h4{
+        font-size: 25px;
+    }
+    p{
+        font-size: 14px;
+    }
 }
+@media only screen and (max-width:1000px){
+    .main_box_img{
+        top: -3rem;
+    }
+    .main_box_text {
+        top: -4rem;
+    }
+    .main_box_text{
+        top: -5rem;
+    }
+    h1{
+        font-size: 60px;
+    }
+    h2, h3, h4{
+        font-size: 25px;
+    }
+
+}   

@@ -27,7 +27,7 @@
     /*HEADER*/
     
     header {
-        display: flex;
+        /* display: flex; */
         justify-content: space-between;
         background-color: white;
         flex-wrap: nowrap;
@@ -59,6 +59,14 @@
         background-color: #f5daca;
         border-radius: 10px;
     
+    }
+    .nav-link{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .navbar-collapse{
+        flex-grow: 0 !important;
     }
     
 /* END HEADER*/

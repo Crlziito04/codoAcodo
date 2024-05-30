@@ -25,8 +25,8 @@ p, a, h2, h3, h4, ul, li{
    
 
 
-    /*
-    .container {
+
+    /* .container {
         height: auto;
         padding: 10px;
         display: flex;
@@ -34,7 +34,7 @@ p, a, h2, h3, h4, ul, li{
         flex-wrap: nowrap;
         border-radius: 10px;
         background-color: white
-    }
+    } */
     
     h1::selection{
         background-color: crimson;
@@ -45,7 +45,7 @@ p, a, h2, h3, h4, ul, li{
     p::selection{
         background-color: crimson;
     }
-    */
+
 
 
 
@@ -74,7 +74,7 @@ p, a, h2, h3, h4, ul, li{
 /*-------------------------------------------------- */
 /*HEADER NO TOCAR*/
 header {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     background-color: white;
     flex-wrap: nowrap;
@@ -84,7 +84,7 @@ header {
 }
 
 .logo {
-    width: 80px;
+    width: 50px;
     border-radius: 999px;
 }
 
@@ -107,6 +107,14 @@ a:hover{
     border-radius: 10px;
 
 }   
+.nav-link{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
     
 /* END HEADER NO TOCAR*/    
 /*-------------------------------------------------- */
@@ -259,7 +267,7 @@ article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con positio
 /*Para dispositivos mobiles de hasta 600px*/
 @media only screen and (max-width:600px){
     header{
-        background-color:  rgb(245, 245, 222);
+        /* background-color:  rgb(245, 245, 222); */
         font-size: 1em;
     }
     header, main, footer{
@@ -270,7 +278,7 @@ article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con positio
     }
     .main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
         padding: 10px 0px;    
-        font-size: 2.5em;
+        /* font-size: 2.5em; */
     } 
     .main .presentacion{ /*padre contenedor*/
         padding: 5px ; /* separo las cajas de producto de arriba y abajo*/
@@ -311,7 +319,7 @@ article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con positio
         bottom: -15px;
     } 
     .logo { /*logo empresa*/
-        width: 70px;
+        /* width: 70px; */
         
     } 
 }   
@@ -331,7 +339,7 @@ article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con positio
          
     }
     .logo { /*logo empresa*/
-        width: 70px;
+        /* width: 70px; */
         
     }
 }
@@ -348,11 +356,10 @@ article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con positio
         bottom: 10px;
     }
     .logo { /*logo empresa*/
-        width: 85px;
+        /* width: 85px; */
         
 }
- 
-
+}
 /* END MAIN*/
     
 /*-------------------------------------------------- */
