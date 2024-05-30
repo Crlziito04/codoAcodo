@@ -235,5 +235,8 @@
         h2, h3, h4{
             font-size: 25px;
         }
+        footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+            font-size: 1rem ;
+        }
     
     }   
