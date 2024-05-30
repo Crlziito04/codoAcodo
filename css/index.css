@@ -3,237 +3,237 @@
 
 * {
 
-font-family: "Pinyon Script", cursive;
-font-weight: 400;
-font-style: normal;
-font-family:'Times New Roman', Times, serif
-}
-  
-  h1{
-    font-family: "Pinyon Script";
-    font-size: 72px;
-  }
-  p, a, h2, h3, h4, ul, li{
-    font-family: "raleway";
-}
-
-.p-3{
-    padding: 0 !important;
-}
-h1::selection{
-    background-color: crimson;
-}
-h2::selection{
-    background-color: crimson;
-}
-h2::selection{
-    background-color: crimson;
-}
-a::selection{
-    background-color: crimson;
-}
-p::selection{
-    background-color: crimson;
-}
-
-/*-------------------------------------------------- */
-
-/*HEADER*/
-
-header {
-    /* display: flex; */
-    justify-content: space-between ;
-    background-color: white;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo {
-    width: 50px;
-    border-radius: 999px;
-}
-
-.menu {
-    list-style-type: none;
-    color: black;
-}
-
-.menu li {
-    display: inline;
-
-}
-.menu a{
-    padding: 10px;
-}
-
-a:hover{
-    color: crimson;
-    background-color: #f5daca;
-    border-radius: 10px;
-
-}
-.nav-link{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navbar-collapse{
-    flex-grow: 0 !important;
-}
-/* END HEADER*/
-
-/*-------------------------------------------------- */
-
-/*MAIN*/
-
-.main {
-    padding: 10px;
-    background-color: #f5daca;
-
-}
-.main h1{
-    text-align: center;
-}
-
-.main_container{
-    margin-bottom: -10rem;
-}
-.main_box_circle {
-    left: 5%;
-    border-radius: 999px;
-    position: relative;
-    width: 20%;
-    height: 0;
-    padding-bottom: 20%;
-    border: 1px solid white;
-    background-color: white;
-    overflow: hidden;
-    animation: fadeInDown;
-    animation-duration: 1500ms;
-}
-
-.main_box_img {
-    object-fit: fill;
-    position: relative;
-    top: -10rem;
-    left: 15%;
-    /*Appearence
-    border: 1px solid white;
-    */
-    animation: fadeInLeft;
-    animation-duration: 1.5s;
-}
-
-.main_box_img img {
-    max-width: 70%;
-}
-
-.main_box_text {
-    position: relative;
-    top: -15rem;
-    left: 30%;
-    max-width: 50%;
-    border: 1px solid white;
-    background-color: white;
-    overflow: hidden;
-    animation: flipInX;
-    animation-duration: 1500ms;
-}
-
-/* END MAIN*/
-
-/*-------------------------------------------------- */
-
-/*FOOTER*/
-footer{ /*Al padre le doy display:flex*/
-    color:rgb(66, 66, 58) ;
-    background-color: white;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-family:'Times New Roman', Times, serif
+    }
+      
+      h1{
+        font-family: "Pinyon Script";
+        font-size: 72px;
+      }
+      p, a, h2, h3, h4, ul, li{
+        font-family: "raleway";
+    }
     
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;   
-}
-
-footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
-    font-size: 1.5em ;
-}
-
-footer .redes i{ /*cambio el color de los iconos redes*/
-   color:rgb(145, 99, 134);
-
-   transition: 0.2 all;
-}
-footer .redes i:hover{
-    color: rgb(110, 110, 92);
-}
-/* END FOOTER*/
-
-/*MEDIA QUERIES*/
-/*Para dispositivos mobiles de hasta 600px*/
-
-
-
-/*Para dispositivos del al menos 600px como minimo: notebooks*/
-@media only screen and (max-width:600px){
-    .main_box_img{
-        top: -1rem;
+    .p-3{
+        padding: 0 !important;
     }
+    h1::selection{
+        background-color: crimson;
+    }
+    h2::selection{
+        background-color: crimson;
+    }
+    h2::selection{
+        background-color: crimson;
+    }
+    a::selection{
+        background-color: crimson;
+    }
+    p::selection{
+        background-color: crimson;
+    }
+    
+    /*-------------------------------------------------- */
+    
+    /*HEADER*/
+    
+    header {
+        /* display: flex; */
+        justify-content: space-between ;
+        background-color: white;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 50px;
+        border-radius: 999px;
+    }
+    
+    .menu {
+        list-style-type: none;
+        color: black;
+    }
+    
+    .menu li {
+        display: inline;
+    
+    }
+    .menu a{
+        padding: 10px;
+    }
+    
+    a:hover{
+        color: crimson;
+        background-color: #f5daca;
+        border-radius: 10px;
+    
+    }
+    .nav-link{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .navbar-collapse{
+        flex-grow: 0 !important;
+    }
+    /* END HEADER*/
+    
+    /*-------------------------------------------------- */
+    
+    /*MAIN*/
+    
+    .main {
+        padding: 10px;
+        background-color: #f5daca;
+    
+    }
+    .main h1{
+        text-align: center;
+    }
+    
+    .main_container{
+        margin-bottom: -10rem;
+    }
+    .main_box_circle {
+        left: 5%;
+        border-radius: 999px;
+        position: relative;
+        width: 20%;
+        height: 0;
+        padding-bottom: 20%;
+        border: 1px solid white;
+        background-color: white;
+        overflow: hidden;
+        animation: fadeInDown;
+        animation-duration: 1500ms;
+    }
+    
+    .main_box_img {
+        object-fit: fill;
+        position: relative;
+        top: -10rem;
+        left: 15%;
+        /*Appearence
+        border: 1px solid white;
+        */
+        animation: fadeInLeft;
+        animation-duration: 1.5s;
+    }
+    
+    .main_box_img img {
+        max-width: 70%;
+    }
+    
     .main_box_text {
-        top: -2rem;
+        position: relative;
+        top: -15rem;
+        left: 30%;
+        max-width: 50%;
+        border: 1px solid white;
+        background-color: white;
+        overflow: hidden;
+        animation: flipInX;
+        animation-duration: 1500ms;
     }
-    .main_box_text{
-        top: -3rem;
+    
+    /* END MAIN*/
+    
+    /*-------------------------------------------------- */
+    
+    /*FOOTER*/
+    footer{ /*Al padre le doy display:flex*/
+        color:rgb(66, 66, 58) ;
+        background-color: white;
+        
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;   
     }
-    h1{
-        font-size: 40px;
+    
+    footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+        font-size: 1.5em ;
     }
-    h2, h3, h4{
-        font-size: 20px;
+    
+    footer .redes i{ /*cambio el color de los iconos redes*/
+       color:rgb(145, 99, 134);
+    
+       transition: 0.2 all;
     }
-    p{
-        font-size: 12px;
+    footer .redes i:hover{
+        color: rgb(110, 110, 92);
     }
-}
-
-
-/*Para dispositivos del al menos 1000px como minimo, es decir 1000px en adelante monitores grandes*/
-@media only screen and (max-width:800px){
-    .main_box_img{
-        top: -2rem;
+    /* END FOOTER*/
+    
+    /*MEDIA QUERIES*/
+    /*Para dispositivos mobiles de hasta 600px*/
+    
+    
+    
+    /*Para dispositivos del al menos 600px como minimo: notebooks*/
+    @media only screen and (max-width:600px){
+        .main_box_img{
+            top: -1rem;
+        }
+        .main_box_text {
+            top: -2rem;
+        }
+        .main_box_text{
+            top: -3rem;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2, h3, h4{
+            font-size: 20px;
+        }
+        p{
+            font-size: 12px;
+        }
     }
-    .main_box_text {
-        top: -3rem;
+    
+    
+    /*Para dispositivos del al menos 1000px como minimo, es decir 1000px en adelante monitores grandes*/
+    @media only screen and (max-width:800px){
+        .main_box_img{
+            top: -2rem;
+        }
+        .main_box_text {
+            top: -3rem;
+        }
+        .main_box_text{
+            top: -5rem;
+        }
+        h1{
+            font-size: 50px;
+        }
+        h2, h3, h4{
+            font-size: 25px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
-    .main_box_text{
-        top: -5rem;
-    }
-    h1{
-        font-size: 50px;
-    }
-    h2, h3, h4{
-        font-size: 25px;
-    }
-    p{
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width:1000px){
-    .main_box_img{
-        top: -3rem;
-    }
-    .main_box_text {
-        top: -4rem;
-    }
-    .main_box_text{
-        top: -5rem;
-    }
-    h1{
-        font-size: 60px;
-    }
-    h2, h3, h4{
-        font-size: 25px;
-    }
-
-}   
+    @media only screen and (max-width:1000px){
+        .main_box_img{
+            top: -3rem;
+        }
+        .main_box_text {
+            top: -4rem;
+        }
+        .main_box_text{
+            top: -5rem;
+        }
+        h1{
+            font-size: 60px;
+        }
+        h2, h3, h4{
+            font-size: 25px;
+        }
+    
+    }   

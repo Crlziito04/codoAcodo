@@ -1,253 +1,254 @@
+
 /*Generales*/
 
 * {
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Times New Roman", Times, serif;
-}
-
-h1 {
-  font-family: "Pinyon Script";
-  font-size: 72px;
-}
-p,
-a,
-h2,
-h3,
-h4,
-ul,
-li,
-legend,
-label,
-input,
-select,
-textarea,
-button {
-  font-family: "raleway";
-}
-
-.container {
-  /* height: auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  border-radius: 10px;
-  background-color: white; */
-}
-
-h1::selection {
-  background-color: crimson;
-}
-
-a::selection {
-  background-color: crimson;
-}
-
-p::selection {
-  background-color: crimson;
-}
-
-/*-------------------------------------------------- */
-
-/*HEADER*/
-
-header {
-  /* display: flex; */
-  justify-content: space-between;
-  background-color: white;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-}
-
-.logo {
-  width: 50px;
-  border-radius: 999px;
-}
-
-.menu {
-  list-style-type: none;
-  color: black;
-}
-
-.menu li {
-  display: inline;
-}
-
-.menu a {
-  padding: 10px;
-}
-
-a:hover {
-  color: crimson;
-  background-color: #f5daca;
-  border-radius: 10px;
-}
-.nav-link{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar-collapse{
-  flex-grow: 0 !important;
-}
-
-/* END HEADER*/
-
-/*-------------------------------------------------- */
-
-/*MAIN*/
-.distribuidor {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin-bottom: 100px; */
-}
-
-.main {
-  /* padding: 10px; */
-  background-color: #f5daca;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
-.main h1 {
-  text-align: center;
-}
-
-.main_container {
-  /* margin-bottom: -10rem; */
-}
-
-
-/* END MAIN*/
-
-/*FORM*/
-form {
-  border: 1px solid black;
-  border-radius: 6px;
-  padding: 5px;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-  position:relative;
-  top: -3rem;
-  background-color: #f5daca;
-}
-
-form div {
-  display: flex;
-  gap: 3px;
-  justify-content: space-between;
-}
-
-form label input {
-  width: 21rem;
-}
-
-.genre {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-textarea {
-  resize: none;
-}
-
-.file {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.file input {
-  text-align: center;
-}
-
-/*DIVdatos*/
-.divDatos {
-  /* max-width: 700px; */
-  display: grid;
-  /* grid-template-columns: 20% 80%; */
-  /* row-gap: 10px; */
-  justify-content: center;
-  /* align-items:start; */
-  /* width: 800px; */
-
-  /* width: fit-content; */
-
-  /* width: 70%; */
-
-}
-.datos{
-  /* display: flex; */
-  padding: 20px;
-  /* width: 20%; */
-  position:relative;
-  top: -3rem;
-  background-color: #f5daca;
-  z-index: 2;
-  border-radius: 20px;
-}
-iframe{
-  width: 1200px;
-  height: 300px;
-  z-index: 3;
-  width: 100%;
-
-}
-
-/*-------------------------------------------------- */
-
-/*FOOTER*/
-footer {
-  /*Al padre le doy display:flex*/
-  color: rgb(66, 66, 58);
-  background-color: white;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .redes {
-  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
-  font-size: 1.5em;
-}
-
-footer .redes i {
-  /*cambio el color de los iconos redes*/
-  color: rgb(145, 99, 134);
-
-  transition: 0.2 all;
-}
-
-footer .redes i:hover {
-  color: rgb(110, 110, 92);
-}
-
-/* END FOOTER*/
-
-@media (width >=768px) {
-  .distribuidor {
-    width: 100%;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1 {
+    font-family: "Pinyon Script";
+    font-size: 72px;
+  }
+  p,
+  a,
+  h2,
+  h3,
+  h4,
+  ul,
+  li,
+  legend,
+  label,
+  input,
+  select,
+  textarea,
+  button {
+    font-family: "raleway";
+  }
+  
+  .container {
+    /* height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    background-color: white; */
+  }
+  
+  h1::selection {
+    background-color: crimson;
+  }
+  
+  a::selection {
+    background-color: crimson;
+  }
+  
+  p::selection {
+    background-color: crimson;
+  }
+  
+  /*-------------------------------------------------- */
+  
+  /*HEADER*/
+  
+  header {
     /* display: flex; */
-    /* flex-direction: row;
-    justify-content: space-around;
-    gap: 30px; */
+    justify-content: space-between;
+    background-color: white;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
   }
-  form{
-    /* width: 100%; */
+  
+  .logo {
+    width: 50px;
+    border-radius: 999px;
   }
-}
+  
+  .menu {
+    list-style-type: none;
+    color: black;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu a {
+    padding: 10px;
+  }
+  
+  a:hover {
+    color: crimson;
+    background-color: #f5daca;
+    border-radius: 10px;
+  }
+  .nav-link{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar-collapse{
+    flex-grow: 0 !important;
+  }
+  
+  /* END HEADER*/
+  
+  /*-------------------------------------------------- */
+  
+  /*MAIN*/
+  .distribuidor {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 100px; */
+  }
+  
+  .main {
+    /* padding: 10px; */
+    background-color: #f5daca;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .main h1 {
+    text-align: center;
+  }
+  
+  .main_container {
+    /* margin-bottom: -10rem; */
+  }
+  
+  
+  /* END MAIN*/
+  
+  /*FORM*/
+  form {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    position:relative;
+    top: -3rem;
+    background-color: #f5daca;
+  }
+  
+  form div {
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+  }
+  
+  form label input {
+    width: 21rem;
+  }
+  
+  .genre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .file {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .file input {
+    text-align: center;
+  }
+  
+  /*DIVdatos*/
+  .divDatos {
+    /* max-width: 700px; */
+    display: grid;
+    /* grid-template-columns: 20% 80%; */
+    /* row-gap: 10px; */
+    justify-content: center;
+    /* align-items:start; */
+    /* width: 800px; */
+  
+    /* width: fit-content; */
+  
+    /* width: 70%; */
+  
+  }
+  .datos{
+    /* display: flex; */
+    padding: 20px;
+    /* width: 20%; */
+    position:relative;
+    top: -3rem;
+    background-color: #f5daca;
+    z-index: 2;
+    border-radius: 20px;
+  }
+  iframe{
+    width: 1200px;
+    height: 300px;
+    z-index: 3;
+    width: 100%;
+  
+  }
+  
+  /*-------------------------------------------------- */
+  
+  /*FOOTER*/
+  footer {
+    /*Al padre le doy display:flex*/
+    color: rgb(66, 66, 58);
+    background-color: white;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .redes {
+    /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+    font-size: 1.5em;
+  }
+  
+  footer .redes i {
+    /*cambio el color de los iconos redes*/
+    color: rgb(145, 99, 134);
+  
+    transition: 0.2 all;
+  }
+  
+  footer .redes i:hover {
+    color: rgb(110, 110, 92);
+  }
+  
+  /* END FOOTER*/
+  
+  @media (width >=768px) {
+    .distribuidor {
+      width: 100%;
+      /* display: flex; */
+      /* flex-direction: row;
+      justify-content: space-around;
+      gap: 30px; */
+    }
+    form{
+      /* width: 100%; */
+    }
+  }
