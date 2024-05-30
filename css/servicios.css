@@ -155,7 +155,7 @@ a:hover{
 }
 
 .main .presentacion article img{ /*imagen de los articulos*/
-    width: 300px;
+    /* width: 300px; */
 }
 
 .main .presentacion article a{ /*hipervinculos de las etiquetas principales*/
