@@ -236,6 +236,51 @@ footer .redes i:hover {
   }
 }
 
+.menu {
+  z-index: 1;
+  margin: auto;
+  background-color: #f5f5de;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.menuBurger img {
+  width: 50px;
+  height: 50px;
+}
+.inactive {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .noneBurger {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  li {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  li a {
+    padding: 10px;
+  }
+  .active li a:hover {
+    outline-offset: -2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+  }
+}
+
 /*Para dispositivos del al menos 600px como minimo: notebooks*/
 @media only screen and (min-width: 600px) {
   article #Card img {

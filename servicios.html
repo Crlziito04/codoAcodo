@@ -27,24 +27,33 @@
 
 <body>
 <!-- HEADER -->
-    <header>
-        <!-- NAVBAR COLOCAR EL NAV DENTRO DE UNA ETIQUETA-->
-        <span> <a href="hptts://CarpeDiem.com.ar"><img src="img/LogoCircular.png" alt="" class="logo"></a></span>
-        <ul class="menu">
-            <li>
-                <a href="index.html" id="Top">Inicio</a>
-            </li>
-            <li>
-                <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="servicios.html">Servicios</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-        <!-- END NAVBAR -->
+   <header>
+      <!-- NAVBAR -->
+      <span>
+        <a href="hptts://CarpeDiem.com.ar"
+          ><img src="img/LogoCircular.png" alt="" class="logo" /></a
+      ></span>
+
+      <button type="button" id="menuBurger" class="menuBurger noneBurger">
+        <img src="./img/menu.png" alt="menu" srcset="" />
+      </button>
+
+      <ul class="inactive active" id="listMenu">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a href="servicios.html">Servicios</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- END NAVBAR -->
     </header>
 <!-- END HEADER -->
     
@@ -396,6 +405,7 @@
     </footer>
     </div>
     <!-- END FOOTER -->
+    <script src="./script/menuBurger.js"></script>
     <script src="./script/fetch.js"></script>
 </body>
 

@@ -1,31 +1,33 @@
 /*Generales*/
 
 * {
-    font-family: "Pinyon Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-family:'Times New Roman', Times, serif
-    }
-    
-html{
-    scroll-behavior: smooth;/*me permite navegar de manera suave, la transicion es suave*/
-}
-    
-
-h1{ /*titulo Nuestros tratamientos esteticos*/
-    font-family: "Pinyon Script";
-    font-size: 72px;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
 }
 
-p, a, h2, h3, h4, ul, li{
-    font-family: "raleway";
+html {
+  scroll-behavior: smooth; /*me permite navegar de manera suave, la transicion es suave*/
 }
 
-   
-   
+h1 {
+  /*titulo Nuestros tratamientos esteticos*/
+  font-family: "Pinyon Script";
+  font-size: 72px;
+}
 
+p,
+a,
+h2,
+h3,
+h4,
+ul,
+li {
+  font-family: "raleway";
+}
 
-    /*
+/*
     .container {
         height: auto;
         padding: 10px;
@@ -47,351 +49,397 @@ p, a, h2, h3, h4, ul, li{
     }
     */
 
-
-
 /*DEFINO ESTILO DE BOTON con class"button":aplicable a cualquier etiqueta link*/
-.button{ 
-    background-color: rgb(92, 88, 92); 
-    color: rgb(238, 229, 217);
-    text-align: center;
-    padding: 4px; 
-    
-    border-radius: 3px;/*a mayor numero lo hace redondo*/
-    border: 3px solid rgb(129, 111, 125);
-   
-    transition: 0.2s all;
+.button {
+  background-color: rgb(92, 88, 92);
+  color: rgb(238, 229, 217);
+  text-align: center;
+  padding: 4px;
 
-    box-shadow: 3px 3px 3px rgb(0,0,0, 0.3);
+  border-radius: 3px; /*a mayor numero lo hace redondo*/
+  border: 3px solid rgb(129, 111, 125);
+
+  transition: 0.2s all;
+
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
 }
 
-.button:hover{
-    background-color:#f5daca;
-    color: rgb(83, 79, 69); 
-}  
-
-
+.button:hover {
+  background-color: #f5daca;
+  color: rgb(83, 79, 69);
+}
 
 /*-------------------------------------------------- */
 /*HEADER NO TOCAR*/
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo {
-    width: 80px;
-    border-radius: 999px;
+  width: 80px;
+  border-radius: 999px;
 }
 
 .menu {
-    list-style-type: none;
-    color: black;
+  list-style-type: none;
+  color: black;
 }
 
 .menu li {
-    display: inline;
-
+  display: inline;
 }
-.menu a{ /*hipervinculos*/
-    padding: 10px;
+.menu a {
+  /*hipervinculos*/
+  padding: 10px;
 }
 
-a:hover{
-    color: crimson;
-    background-color: #f5daca;
-    border-radius: 10px;
+a:hover {
+  color: crimson;
+  background-color: #f5daca;
+  border-radius: 10px;
+}
 
-}   
-    
-/* END HEADER NO TOCAR*/    
+/* END HEADER NO TOCAR*/
 /*-------------------------------------------------- */
 
 /*MAIN*/
 .main {
-    padding: 15Px;
-    background-color: #f5daca;    
+  padding: 15px;
+  background-color: #f5daca;
 }
 
-.main h1{   /* TITULO principal:Nuestros tratamientos esteticos*/
-    text-align: center;
-    padding: 15px 0px;    
-    margin: 0px;
-    background-color:#f5daca;
+.main h1 {
+  /* TITULO principal:Nuestros tratamientos esteticos*/
+  text-align: center;
+  padding: 15px 0px;
+  margin: 0px;
+  background-color: #f5daca;
 }
-    
+
 /*MAIN: tarjetas de presentacion*/
-.main .presentacion{ /*padre contenedor*/
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 25px ; /* separo las cajas de producto de arriba y abajo*/
-    background-color: rgb(245, 245, 222)
-}   
+.main .presentacion {
+  /*padre contenedor*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-.main .presentacion article{  /*diseño de cada etiqueta article*/
-    width: 300px;
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-
-    display: flex;
-    flex-direction: column;/*le indico column ya que el articulo va hacia abajo: con imagen, titulo y descripcion*/    
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px; /* separo las cajas de producto de arriba y abajo*/
+  background-color: rgb(245, 245, 222);
 }
 
-.main .presentacion article img{ /*imagen de los articulos*/
-    width: 300px;
+.main .presentacion article {
+  /*diseño de cada etiqueta article*/
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column; /*le indico column ya que el articulo va hacia abajo: con imagen, titulo y descripcion*/
 }
 
-.main .presentacion article a{ /*hipervinculos de las etiquetas principales*/
-   text-decoration: none;  
+.main .presentacion article img {
+  /*imagen de los articulos*/
+  width: 300px;
 }
 
-.main .presentacion article a h2{ /*subtitulo de los articulos*/
-    font-size: 1.1em;
-    padding: 6px 5px; /*6px arriba/abajo y 5px a los costados*/
-       
+.main .presentacion article a {
+  /*hipervinculos de las etiquetas principales*/
+  text-decoration: none;
 }
 
-.main .presentacion article p{
-    text-align: center;
-    padding: 10px;
-    margin-right: 3px;
-    color:  black;
+.main .presentacion article a h2 {
+  /*subtitulo de los articulos*/
+  font-size: 1.1em;
+  padding: 6px 5px; /*6px arriba/abajo y 5px a los costados*/
 }
 
+.main .presentacion article p {
+  text-align: center;
+  padding: 10px;
+  margin-right: 3px;
+  color: black;
+}
 
-
-
-
-
-.facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
-    text-align: center;
-    padding: 25px;
-    margin: 0px;
-    border-color:rgb(189, 176, 187);
-    border-style: double;
-    letter-spacing:5px;
-    background-color: rgb(65, 62, 65); 
-    color:rgb(238, 229, 217);
-    
+.facial h2,
+.corporal h2,
+.aparatologia h2 {
+  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+  text-align: center;
+  padding: 25px;
+  margin: 0px;
+  border-color: rgb(189, 176, 187);
+  border-style: double;
+  letter-spacing: 5px;
+  background-color: rgb(65, 62, 65);
+  color: rgb(238, 229, 217);
 }
 
 .contenedor_facial {
-    display: flex;
-    flex-direction: column;
-    
-    background-color:#f5daca;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f5daca;
 }
 
-.contenedor_facial article, .contenedor_corporal article, .contenedor_aparatologia article{/*con justify;center, centro los elementos/articulos en el contenedor facial*/
-    display: flex;
-    justify-content: center;
-
+.contenedor_facial article,
+.contenedor_corporal article,
+.contenedor_aparatologia article {
+  /*con justify;center, centro los elementos/articulos en el contenedor facial*/
+  display: flex;
+  justify-content: center;
 }
 
-
-article #Card{
-    display: flex;
-    width: 90vw;
-    padding: 15px;
-    border: 3px solid rgb(145, 145, 122);
-    margin: 10px;
-    border-radius: 8px;
-    color: black;
-    font-size: 1em;  
-    
-          
+article #Card {
+  display: flex;
+  width: 90vw;
+  padding: 15px;
+  border: 3px solid rgb(145, 145, 122);
+  margin: 10px;
+  border-radius: 8px;
+  color: black;
+  font-size: 1em;
 }
-article #Card img{
-    width: 20%;
-    border: 3px solid rgb(145, 145, 122);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius:10px;
-    /*position: relative;*/ 
-    align-self: center;/*propiedad de flex que evita que la imagen se desforme al achicarse el viewport*/
-
+article #Card img {
+  width: 20%;
+  border: 3px solid rgb(145, 145, 122);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /*position: relative;*/
+  align-self: center; /*propiedad de flex que evita que la imagen se desforme al achicarse el viewport*/
 }
 
-article #Card .titulo_tarjeta{/*h3:subtitulo de cada tratamiento*/
-    width: auto;
-    color: rgb(95, 64, 89);
-    
-    margin: auto;
-    padding:10px;
-    text-align: center; 
-    letter-spacing:10px;
-    background-color: white;
+article #Card .titulo_tarjeta {
+  /*h3:subtitulo de cada tratamiento*/
+  width: auto;
+  color: rgb(95, 64, 89);
+
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 10px;
+  background-color: white;
 }
 
-article #Card p{  /*texto tarjeta*/
-    text-align:left;
-    padding-left: 5px;
-
+article #Card p {
+  /*texto tarjeta*/
+  text-align: left;
+  padding-left: 5px;
 }
 
-#Card{ /* posiciono al padre con position: relative para poder ubicar al hijo:a (hipervinculo) con position absolute*/
-    position: relative; 
+#Card {
+  /* posiciono al padre con position: relative para poder ubicar al hijo:a (hipervinculo) con position absolute*/
+  position: relative;
 }
-article #Card a{  /*hipervinculo= a "solicitar mas informacion" hijo con position absolute. Le pongo a su padre position relative para poder posicionar al hijo*/
-    position: absolute;
-    
-    right: 5px;
-    bottom: 10px;
+article #Card a {
+  /*hipervinculo= a "solicitar mas informacion" hijo con position absolute. Le pongo a su padre position relative para poder posicionar al hijo*/
+  position: absolute;
+
+  right: 5px;
+  bottom: 10px;
 }
-    
-
-
-
-
-
-
-
 
 /*MEDIA QUERIES*/
 /*Para dispositivos mobiles de hasta 600px*/
-@media only screen and (max-width:600px){
-    header{
-        background-color:  rgb(245, 245, 222);
-        font-size: 1em;
-    }
-    header, main, footer{
-        padding: 5px; 
-    }
-    body{
-        font-size: 14px;
-    }
-    .main h1{   /*color de fondo de Nuestros tratamientos esteticos*/
-        padding: 10px 0px;    
-        font-size: 2.5em;
-    } 
-    .main .presentacion{ /*padre contenedor*/
-        padding: 5px ; /* separo las cajas de producto de arriba y abajo*/
-        background-color: beige;
-    } 
-    .main .presentacion article{ /*las tarjetas ocupan el 80% del viewport*/
-        width: 80%;
-        display: flex;
-        padding: 10px;
-    }
-    .main .presentacion article img{ /*imagen de los articulos*/
-        width: 200px;
-    }
-    .main .presentacion article a{ /*hipervinculos*/
-        margin: 0px;
-        padding: 0px;
-    }
-    .main .presentacion article a h2{ /*subtitulo de los articulos*/
-        font-size: 1.3em;
-        background-color: rgb(92, 88, 92);       
-    }
-    article #Card{
-        width: 75vw;
-        padding: 5px;
-        border: 5px solid rgb(145, 145, 122);
-       
-        flex-direction: column;/*indico como quiero que se ubiquen los articulos: en columnas uno debajo del otro*/          
-    }
-    article #Card img{ /*foto de cada tarjeta*/
-        width: 80%;
-        border-radius:10px;
-    }
-    article #Card .titulo_tarjeta{/*h3:subtitulo de cada tratamiento*/
-        letter-spacing:4px;    
-    }
-    article #Card a{  /*hipervinculo: solicitar mas informacion*/
-        position: absolute;
-        bottom: -15px;
-    } 
-    .logo { /*logo empresa*/
-        width: 70px;
-        
-    } 
-}   
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: rgb(245, 245, 222);
+    font-size: 1em;
+  }
+  header,
+  main,
+  footer {
+    padding: 5px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .main h1 {
+    /*color de fondo de Nuestros tratamientos esteticos*/
+    padding: 10px 0px;
+    font-size: 2.5em;
+  }
+  .main .presentacion {
+    /*padre contenedor*/
+    padding: 5px; /* separo las cajas de producto de arriba y abajo*/
+    background-color: beige;
+  }
+  .main .presentacion article {
+    /*las tarjetas ocupan el 80% del viewport*/
+    width: 80%;
+    display: flex;
+    padding: 10px;
+  }
+  .main .presentacion article img {
+    /*imagen de los articulos*/
+    width: 200px;
+  }
+  .main .presentacion article a {
+    /*hipervinculos*/
+    margin: 0px;
+    padding: 0px;
+  }
+  .main .presentacion article a h2 {
+    /*subtitulo de los articulos*/
+    font-size: 1.3em;
+    background-color: rgb(92, 88, 92);
+  }
+  article #Card {
+    width: 75vw;
+    padding: 5px;
+    border: 5px solid rgb(145, 145, 122);
 
+    flex-direction: column; /*indico como quiero que se ubiquen los articulos: en columnas uno debajo del otro*/
+  }
+  article #Card img {
+    /*foto de cada tarjeta*/
+    width: 80%;
+    border-radius: 10px;
+  }
+  article #Card .titulo_tarjeta {
+    /*h3:subtitulo de cada tratamiento*/
+    letter-spacing: 4px;
+  }
+  article #Card a {
+    /*hipervinculo: solicitar mas informacion*/
+    position: absolute;
+    bottom: -15px;
+  }
+  .logo {
+    /*logo empresa*/
+    width: 70px;
+  }
+}
+.menu {
+  z-index: 1;
+  margin: auto;
+  background-color: #f5f5de;
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.menuBurger img {
+  width: 50px;
+  height: 50px;
+}
+.inactive {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .noneBurger {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  li {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  li a {
+    padding: 10px;
+  }
+  .active li a:hover {
+    outline-offset: -2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+  }
+}
 
 /*Para dispositivos del al menos 600px como minimo: notebooks*/
-@media only screen and (min-width:600px){
-    article #Card img{ /*foto de cada tarjeta*/
-        width: 40%;    
-    }
-    article #Card a{  /*hipervinculo:solicitar mas informacion*/
-        position: absolute;
-        bottom: -10px;   
-    }
-    .facial h2, .corporal h2, .aparatologia h2{  /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
-        font-size: 20px;
-         
-    }
-    .logo { /*logo empresa*/
-        width: 70px;
-        
-    }
+@media only screen and (min-width: 600px) {
+  article #Card img {
+    /*foto de cada tarjeta*/
+    width: 40%;
+  }
+  article #Card a {
+    /*hipervinculo:solicitar mas informacion*/
+    position: absolute;
+    bottom: -10px;
+  }
+  .facial h2,
+  .corporal h2,
+  .aparatologia h2 {
+    /*titulo Tratamientos Faciales/ Corporales /Aparatologia estetica*/
+    font-size: 20px;
+  }
+  .logo {
+    /*logo empresa*/
+    width: 70px;
+  }
 }
-
 
 /*Para dispositivos del al menos 1000px como minimo, es decir 1000px en adelante monitores grandes*/
-@media only screen and (min-width:1000px){
-    article #Card img{
-        width: 20%;   
-    }
-    article #Card a{  /*hipervinculo:solicitar mas informacion*/
-        position: absolute;
-        right: 5px;
-        bottom: 10px;
-    }
-    .logo { /*logo empresa*/
-        width: 85px;
-        
-}
- 
+@media only screen and (min-width: 1000px) {
+  article #Card img {
+    width: 20%;
+  }
+  article #Card a {
+    /*hipervinculo:solicitar mas informacion*/
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+  }
+  .logo {
+    /*logo empresa*/
+    width: 85px;
+  }
 
-/* END MAIN*/
-    
-/*-------------------------------------------------- */
-    
-   
-/*FOOTER*/
-footer{ /*Al padre le doy display:flex*/
-    color:rgb(66, 66, 58) ;
+  /* END MAIN*/
+
+  /*-------------------------------------------------- */
+
+  /*FOOTER*/
+  footer {
+    /*Al padre le doy display:flex*/
+    color: rgb(66, 66, 58);
     background-color: white;
-    
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;   
-}
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  footer .redes {
+    /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+    font-size: 1.5em;
+  }
 
-footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
-    font-size: 1.5em ;
-}
+  footer .redes i {
+    /*cambio el color de los iconos redes*/
+    color: rgb(145, 99, 134);
 
-footer .redes i{ /*cambio el color de los iconos redes*/
-   color:rgb(145, 99, 134);
-
-   transition: 0.2 all;
-}
-footer .redes i:hover{
+    transition: 0.2 all;
+  }
+  footer .redes i:hover {
     color: rgb(110, 110, 92);
-}
+  }
 
-
-/*boton Volver a inicio: mismos estilos que el nav*/
-footer div a:hover{
+  /*boton Volver a inicio: mismos estilos que el nav*/
+  footer div a:hover {
     color: crimson;
     background-color: #f5daca;
     border-radius: 10px;
-    padding: 10px;    
+    padding: 10px;
+  }
+
+  /* END FOOTER*/
 }
-
- /* END FOOTER*/
-
-

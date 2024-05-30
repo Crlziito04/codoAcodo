@@ -1,66 +1,69 @@
-*{
-    font-family: "Pinyon Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-family:'Times New Roman', Times, serif
-    }
-      
-      h1{
-        font-family: "Pinyon Script";
-        font-size: 72px;
-      }
-      p, a, h2, h3, h4, ul, li{
-        font-family: "raleway";
-    }
-    
-    
-    h1::selection{
-        background-color: crimson;
-    }
-    a::selection{
-        background-color: crimson;
-    }
-    p::selection{
-        background-color: crimson;
-    }
+* {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Times New Roman", Times, serif;
+}
 
-    /*HEADER*/
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .logo {
-        width: 50px;
-        border-radius: 999px;
-    }
-    
-    .menu {
-        list-style-type: none;
-        color: black;
-    }
-    
-    .menu li {
-        display: inline;
-    
-    }
-    .menu a{
-        padding: 10px;
-    }
-    
-    a:hover{
-        color: crimson;
-        background-color: #f5daca;
-        border-radius: 10px;
-    
-    }
-    
+h1 {
+  font-family: "Pinyon Script";
+  font-size: 72px;
+}
+p,
+a,
+h2,
+h3,
+h4,
+ul,
+li {
+  font-family: "raleway";
+}
+
+h1::selection {
+  background-color: crimson;
+}
+a::selection {
+  background-color: crimson;
+}
+p::selection {
+  background-color: crimson;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 999px;
+}
+
+.menu {
+  list-style-type: none;
+  color: black;
+}
+
+.menu li {
+  display: inline;
+}
+.menu a {
+  padding: 10px;
+}
+
+a:hover {
+  color: crimson;
+  background-color: #f5daca;
+  border-radius: 10px;
+}
+
 /* END HEADER*/
 
 /*-------------------------------------------------- */
@@ -68,92 +71,139 @@
 /*MAIN*/
 
 .main {
-    padding: 10px;
-    background-color: #f5daca;
-
+  padding: 10px;
+  background-color: #f5daca;
 }
-.main h1{
-    text-align: center;
-}
-
-h1{
-    line-height: 1.1;
-}
-h3{
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 30px;
-    text-align: center;
-}
-h4{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin: 20px;
-    text-align: center;
-}
-body p{
-    color: #111111;
-}
-.nosotros{
-    background-color: #f5daca;
-}
-section{
-   /* padding: 50px; */
-}
-section p{
-    line-height: 1.8;
+.main h1 {
+  text-align: center;
 }
 
-.nosotros ul{
-    padding-left: 30px;
+h1 {
+  line-height: 1.1;
 }
-.nosotros ul li{
-    font-weight: 400;
-    font-size: 18px;
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.nosotros ul li p{
-    font-weight: 100;
-    font-size: 15px;
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 20px;
+  text-align: center;
 }
-.img{  
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: 0;
-    border-radius: 50%;
+body p {
+  color: #111111;
 }
-.rosario{
-    background-image: url(../img/profesionales/Rosario_Gonzalez.jpg);
+.nosotros {
+  background-color: #f5daca;
 }
-.yasmin{
-    background-image: url(../img/profesionales/Yasmin_Alvaro.jpg);
+section {
+  /* padding: 50px; */
 }
-.federico{
-    background-image: url(../img/profesionales/Federico_Cuenca.jpg);
+section p {
+  line-height: 1.8;
 }
-.debora{
-    background-image: url(../img/profesionales/Debora_Cherem.jpg);
+
+.nosotros ul {
+  padding-left: 30px;
+}
+.nosotros ul li {
+  font-weight: 400;
+  font-size: 18px;
+}
+.nosotros ul li p {
+  font-weight: 100;
+  font-size: 15px;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 50%;
+}
+.rosario {
+  background-image: url(../img/profesionales/Rosario_Gonzalez.jpg);
+}
+.yasmin {
+  background-image: url(../img/profesionales/Yasmin_Alvaro.jpg);
+}
+.federico {
+  background-image: url(../img/profesionales/Federico_Cuenca.jpg);
+}
+.debora {
+  background-image: url(../img/profesionales/Debora_Cherem.jpg);
 }
 /*FOOTER*/
-footer{ /*Al padre le doy display:flex*/
-    color:rgb(66, 66, 58) ;
-    background-color: white;
-    
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;   
+footer {
+  /*Al padre le doy display:flex*/
+  color: rgb(66, 66, 58);
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer .redes{  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
-    font-size: 1.5em ;
+footer .redes {
+  /*le doy tamaño de fuente al div redes y los hijos lo heredan se ajustan proporcionalmente*/
+  font-size: 1.5em;
 }
 
-footer .redes i{ /*cambio el color de los iconos redes*/
-   color:rgb(145, 99, 134);
+footer .redes i {
+  /*cambio el color de los iconos redes*/
+  color: rgb(145, 99, 134);
 
-   transition: 0.2 all;
+  transition: 0.2 all;
 }
-footer .redes i:hover{
-    color: rgb(110, 110, 92);
+footer .redes i:hover {
+  color: rgb(110, 110, 92);
 }
 /* END FOOTER*/
+
+.menu {
+  z-index: 1;
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.menuBurger img {
+  width: 50px;
+  height: 50px;
+}
+.inactive {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .noneBurger {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  li {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  li a {
+    padding: 10px;
+  }
+  .active li a:hover {
+    outline-offset: -2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+  }
+}
