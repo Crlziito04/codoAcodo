@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const containerPresentacion = document.getElementById("containerProductos");
 
-  const renderCardsPresentacion = (data) => {
+  const renderProductos = (data) => {
     data.forEach(item => {
       const article = document.createElement('article');
       article.innerHTML = `
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then(data => {
-      renderCardsPresentacion(data);
+      renderProductos(data);
     })
     .catch(error => console.log("Ocurrió un error! " + error));
 });
