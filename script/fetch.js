@@ -1,18 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const containerPresentacion = document.getElementById("containerPresentacion");
+  const containerPresentacion = document.getElementById("containerProductos");
 
   const renderCardsPresentacion = (data) => {
     data.forEach(item => {
       const article = document.createElement('article');
       article.innerHTML = `
-        <img
-          src="${item.img}"
-          alt="${item.nombre}"
-        />
-        <a href="#${item.nombre}" class="button">
-          <h2>${item.nombre}</h2>
-        </a>
-        <p>${item.descripcion}</p>`;
+          <h3>${item.nombre}</h3>
+        <p>${item.marca}</p>
+        <p>${item.modo_de_uso}</p>
+        <p>${item.precio}</p>`;
       containerPresentacion.appendChild(article);
     });
   };
