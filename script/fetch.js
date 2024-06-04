@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const containerPresentacion = document.getElementById("containerProductos");
+  const containerProductos = document.getElementById("containerProductos");
 
   const renderProductos = (data) => {
     data.forEach(item => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${item.marca}</p>
         <p>${item.modo_de_uso}</p>
         <p>${item.precio}</p>`;
-      containerPresentacion.appendChild(article);
+      containerProductos.appendChild(article);
     });
   };
 
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then(data => {
+      console.log(data)
       renderProductos(data);
     })
     .catch(error => console.log("Ocurrió un error! " + error));
