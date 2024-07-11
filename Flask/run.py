@@ -21,10 +21,10 @@ app.route('/api/products/archived/', methods=['GET'])(get_products_archived)
 
 app.route('/api/products/fetch/<int:product_id>', methods=['GET'])(get_product)
 
-app.route('/api/tasks/create/', methods=['POST'])(create_product)
-app.route('/api/tasks/update/<int:product_id>', methods=['PUT'])(update_product)
+app.route('/api/products/create/', methods=['POST'])(create_product)
+app.route('/api/products/update/<int:product_id>', methods=['PUT'])(update_product)
 
-app.route('/api/tasks/archive/<int:product_id>', methods=['DELETE'])(archive_product)
+app.route('/api/products/archived/<int:product_id>', methods=['DELETE'])(archive_product)
 
 create_table_product()
 
