@@ -5,13 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
     data.forEach(item => {
       const article = document.createElement('article');
       article.innerHTML = `
-        <span>${item.id}</span>
         <span>${item.productName}</span>
         <span>${item.productDetails}</span>
         <span>${item.productPrice}</span>
         <span>${item.productStock}</span>
-        <span>${item.productStock}</span>
-        <span>${item.active}</span>
       `;
       productosActivos.appendChild(article);
     });
@@ -38,13 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     data.forEach((item) => {
       const article = document.createElement("article");
       article.innerHTML = `
-        <span>${item.id}</span>
         <span>${item.productName}</span>
         <span>${item.productDetails}</span>
         <span>${item.productPrice}</span>
         <span>${item.productStock}</span>
-        <span>${item.productStock}</span>
-        <span>${item.active}</span>
       `;
       productosArchivados.appendChild(article);
     });

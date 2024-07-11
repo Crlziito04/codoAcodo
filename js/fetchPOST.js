@@ -2,10 +2,11 @@ let submitButton = document.querySelector("#Formulario #Crear");
 
 submitButton.addEventListener("click", () => {
   let data_post = {
-    productName: document.querySelector("#Formulario #Nombre").value,
-    productDetails: document.querySelector("#Formulario #Descripcion").value,
-    productPrice: document.querySelector("#Formulario #Precio").value,
-    productStock: document.querySelector("#Formulario #Stock").value,
+    'productName': document.querySelector("#Formulario #Nombre").value,
+    'productDetails': document.querySelector("#Formulario #Descripcion").value,
+    'productPrice': document.querySelector("#Formulario #Precio").value,
+    'productStock': document.querySelector("#Formulario #Stock").value,
+    'active': document.querySelector("#Formulario #Activo").value,
   };
 
   fetchData(
