@@ -11,8 +11,8 @@ const updateProduct = async (product, id) => {
     if (!response.ok) {
       throw new Error('Error al agregar el producto');
     }
-    const data = await response.json();
-    alert(data)
+    await response.json();
+
     window.location.reload(true);
   } catch (error) {
     alert(error.message);
