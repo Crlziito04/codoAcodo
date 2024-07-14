@@ -1,13 +1,12 @@
 from app.database import get_db
 
 class Product:
-    def __init__(self, id_product=None, productName=None, productDetails=None, productPrice=None, productStock=None, productBrand=None, active=None):
+    def __init__(self, id_product=None, productName=None, productDetails=None, productPrice=None, productStock=None, productBrand=None):
         self.id_product = id_product
         self.productName = productName
         self.productDetails = productDetails
         self.productPrice = productPrice
         self.productStock = productStock
-        self.active = active
         
 
     @staticmethod
@@ -25,8 +24,7 @@ class Product:
                     productName=row[1],
                     productDetails=row[2],
                     productPrice=row[3],
-                    productStock=row[4],
-                    active=row[5],
+                    productStock=row[4]
                 )
             )
         cursor.close()
@@ -37,8 +35,7 @@ class Product:
         return Product.__get_products_by_query(
             """
                 SELECT * 
-                FROM product 
-                WHERE active = true
+                FROM product
             """
         )
 
@@ -67,10 +64,29 @@ class Product:
                 productName=row[1],
                 productDetails=row[2],
                 productPrice=row[3],
-                productStock=row[4],
-                active=row[5],
+                productStock=row[4]
             )
         return None
+    
+    @staticmethod
+    def get_by_name(productName):
+      db = get_db()
+      cursor = db.cursor()
+      cursor.execute("SELECT * FROM product WHERE LOWER(productname) = LOWER(%s)", (productName,))
+    
+      row = cursor.fetchone()
+      cursor.close()
+
+      if row:
+        return Product(
+            id_product=row[0],
+            productName=row[1],
+            productDetails=row[2],
+            productPrice=row[3],
+            productStock=row[4]
+        )
+      return None
+
     
     def save(self):
         db = get_db()
@@ -79,18 +95,18 @@ class Product:
             cursor.execute(
                 """
                 UPDATE product
-                SET productName = %s, productDetails = %s, productPrice = %s, productStock = %s, active = %s
+                SET productName = %s, productDetails = %s, productPrice = %s, productStock = %s
                 WHERE id = %s
                 """,
-                (self.productName, self.productDetails, self.productPrice, self.productStock, self.active, self.id_product))
+                (self.productName, self.productDetails, self.productPrice, self.productStock, self.id_product))
         else: # Crear Produto nuevo
             cursor.execute(
                 """
                 INSERT INTO product
-                (productName, productDetails, productPrice, productStock, active)
-                VALUES (%s, %s, %s, %s, %s)
+                (productName, productDetails, productPrice, productStock)
+                VALUES (%s, %s, %s, %s)
                 """,
-                (self.productName, self.productDetails, self.productPrice, self.productStock, self.active))
+                (self.productName, self.productDetails, self.productPrice, self.productStock))
             self.id_product = cursor.lastrowid
         db.commit()
         cursor.close()
@@ -98,7 +114,7 @@ class Product:
     def delete(self):
         db = get_db()
         cursor = db.cursor()
-        cursor.execute("UPDATE product SET active = false WHERE id = %s", (self.id_product,))
+        cursor.execute("DELETE FROM product WHERE id = %s", (self.id_product,))
         db.commit()
         cursor.close()
 
@@ -108,6 +124,5 @@ class Product:
             'productName': self.productName,
             'productDetails': self.productDetails,
             'productPrice': self.productPrice,
-            'productStock': self.productStock,
-            'active': self.active
+            'productStock': self.productStock
         }

@@ -59,12 +59,21 @@ def create_table_product():
             productName VARCHAR(100) NOT NULL,
             productDetails VARCHAR(300) NOT NULL,
             productPrice INT NOT NULL,
-            productStock INT NOT NULL,
-            active BOOLEAN NOT NULL
+            productStock INT NOT NULL
         );
         """
     )
     conn.commit()
    
+    cur.close()
+    conn.close()
+
+def remove_column_active():
+    conn = psycopg2.connect(**DATABASE_CONFIG)
+    cur = conn.cursor()
+    
+    cur.execute("ALTER TABLE product DROP COLUMN IF EXISTS active;")
+    
+    conn.commit()
     cur.close()
     conn.close()

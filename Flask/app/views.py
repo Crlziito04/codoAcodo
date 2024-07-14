@@ -18,20 +18,25 @@ def get_product(id_product):
         return jsonify({'message': 'Product not found'}), 404
     return jsonify(product.serialize())
 
+def get_productByName(productName):
+    product = Product.get_by_name(productName)
+    if not product:
+        return jsonify({'message': 'Product not found'}), 404
+    return jsonify(product.serialize())
+
 def create_product():
     data = request.json
     new_product = Product(
         productName=data['productName'],
         productDetails=data['productDetails'],
         productPrice=data['productPrice'],
-        productStock=data['productStock'],
-        active=True
+        productStock=data['productStock']
     )
     new_product.save()
     return jsonify({'message': 'Product created successfully'}), 201
 
-def update_product(id_product):
-    product = Product.get_by_id(id_product)
+def update_product(product_id):
+    product = Product.get_by_id(product_id)
     if not product:
         return jsonify({'message': 'Product not found'}), 404
    
@@ -43,8 +48,8 @@ def update_product(id_product):
     product.save()
     return jsonify({'message': 'Product updated successfully'})
 
-def archive_product(id_product):
-    product = Product.get_by_id(id_product)
+def archive_product(product_id):
+    product = Product.get_by_id(product_id)
     if not product:
         return jsonify({'message': 'Product not found'}), 404
    
