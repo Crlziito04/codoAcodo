@@ -66,19 +66,23 @@
       <div class="main_container">
 
         <h2>Agregar Productos</h2>
-        <form id="Formulario" method="POST">
-          <input type="text" id="Titulo" name="Titulo" placeholder="Título" required>
-          <hr>
-          <textarea name="descripcion" id="Descripcion" class="descripcion" placeholder="Descripción"
-            required></textarea>
-          <div class="acciones">
-            <a href="../index.html#TareasPendientes" id="Cancelar" title="Cancelar"><i
-                class='bx bxs-message-square-x'></i></a>
-            <button type="button" id="Crear" title="Crear"><i class='bx bxs-message-square-check'></i></button>
-          </div>
-          <span class="fecha" title="Fecha de creación"></span>
-          <input id="task_id" type="hidden" name="task_id">
-        </form>
+        <section class="products">
+            <div class="products-list">
+                <article class="product active">
+                    <form id="Formulario" method="POST">
+                        <input type="text" id="Titulo" name="Titulo" placeholder="Título" required>
+                        <hr>
+                        <textarea name="descripcion" id="Descripcion" class="descripcion" placeholder="Descripción" required></textarea>
+                        <div class="acciones">
+                            <a href="../index.html#ProductosActivos" id="Cancelar" title="Cancelar"><i class='bx bxs-message-square-x' ></i></a>
+                            <button type="button" id="Crear" title="Crear"><i class='bx bxs-message-square-check'></i></button>
+                        </div>
+                        <span class="fecha" title="Fecha de creación"></span>
+                        <input id="task_id" type="hidden" name="task_id">
+                    </form>
+                </article>
+            </div>
+        </section>
         <a href="./servicios.html" class="button">Eliminar Productos</a>
         <h2>Productos Cargados</h2>
         <div id="containerProductos"></div>
@@ -96,6 +100,10 @@
     </div>
   </footer>
   <script src="./script/fetch.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/fetchData.js"></script>
+  <!-- <script src="js/fetchGET.js"></script> -->
+  <!-- <script src="js/fetchPOST.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

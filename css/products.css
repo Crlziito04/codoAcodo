@@ -13,7 +13,7 @@
         font-family: "Pinyon Script";
         font-size: 72px;
       }
-      p, a, h2, h3, h4, ul, li{
+      p, a, h2, h3, h4, ul, li, span, button{
         font-family: "raleway";
     }
     
@@ -35,7 +35,9 @@
     p::selection{
         background-color: crimson;
     }
-    
+    button::selection{
+    background-color: crimson;
+    }
     /*-------------------------------------------------- */
     
     /*HEADER*/
@@ -72,6 +74,12 @@
         color: crimson;
         background-color: #f5daca;
         border-radius: 10px;
+    
+    }
+    button:hover{
+    color: crimson;
+    background-color: #f5daca;
+    border-radius: 10px;
     
     }
     .nav-link{
