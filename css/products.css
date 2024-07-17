@@ -17,6 +17,14 @@
         font-family: "raleway";
     }
     
+    .addProd{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
     .p-3{
         padding: 0 !important;
     }

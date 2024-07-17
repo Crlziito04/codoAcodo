@@ -88,8 +88,35 @@
         <!--contenedor general:main-->
         <a href="./servicios.html" class="button">Volver</a>
         <h1>CarpeDiem</h1>
-        <div class="main_container">
-          <button id="showFormBtn" class="button">Agregar Producto</button>
+        <div class="main_container addProd">
+
+
+          <!-- <button id="reset">Reset</button> -->
+
+          <h2>Productos Cargados</h2>
+          <div id="editFormContainer" style="display: none">
+            <form id="editProductForm">
+              <input type="hidden" id="editProductId" />
+              <label for="editProductName">Name:</label>
+              <input type="text" id="editProductName" required />
+              <label for="editProductDetails">Details:</label>
+              <input type="text" id="editProductDetails" required />
+              <label for="editProductPrice">Price:</label>
+              <input type="number" id="editProductPrice" required />
+              <label for="editProductStock">Stock:</label>
+              <input type="number" id="editProductStock" required />
+              <button type="submit" class="button" >Update Product</button>
+            </form>
+          </div>
+
+          <div>
+            <input id="searchProduct" type="text" placeholder="Buscar Producto" />
+            <button id="searchBtn" class="button" type="submit">Buscar</button>
+          </div>
+
+          <table id="containerProductos"></table>
+
+                    <button id="showFormBtn" class="button">Agregar Producto</button>
           <div id="formContainer" style="display: none">
             <form id="addProductForm">
               <input
@@ -116,34 +143,9 @@
                 placeholder="Stock del producto"
                 required
               />
-              <button type="submit" class="button">Agregar Producto</button>
+              <button type="submit" class="button">Agregar</button>
             </form>
           </div>
-
-          <!-- <button id="reset">Reset</button> -->
-
-          <h2>Productos Cargados</h2>
-          <div id="editFormContainer" style="display: none">
-            <form id="editProductForm">
-              <input type="hidden" id="editProductId" />
-              <label for="editProductName">Name:</label>
-              <input type="text" id="editProductName" required />
-              <label for="editProductDetails">Details:</label>
-              <input type="text" id="editProductDetails" required />
-              <label for="editProductPrice">Price:</label>
-              <input type="number" id="editProductPrice" required />
-              <label for="editProductStock">Stock:</label>
-              <input type="number" id="editProductStock" required />
-              <button type="submit" class="button" >Update Product</button>
-            </form>
-          </div>
-
-          <div>
-            <input id="searchProduct" type="text" placeholder="Buscar Producto" />
-            <button id="searchBtn" class="button" type="submit">Buscar</button>
-          </div>
-
-          <table id="containerProductos"></table>
         </div>
       </div>
     </main>

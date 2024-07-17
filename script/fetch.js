@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     await addProduct(newProduct);
   });
-
+// "http://localhost:5000/api/products/active/"
   fetch("http://localhost:5000/api/products/active/")
     .then(response => {
       if (!response.ok) {
