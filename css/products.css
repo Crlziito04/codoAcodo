@@ -13,7 +13,7 @@
         font-family: "Pinyon Script";
         font-size: 72px;
       }
-      p, a, h2, h3, h4, ul, li, span, button{
+      p, a, h2, h3, h4, ul, li, span, input, label, button{
         font-family: "raleway";
     }
     
@@ -37,6 +37,10 @@
     }
     button::selection{
     background-color: crimson;
+    }
+    th{
+        background-color: #f5daca;
+        border-bottom: 1px solid rgb(129, 111, 125);
     }
     /*-------------------------------------------------- */
     
@@ -105,15 +109,30 @@
         text-align: center;
     }
     
-    
+    th{
+        font-size: 24px;
+        font-family: "raleway";
+    }
+    td{
+        font-size: 18px;
+        font-family: "raleway";
+    }
+    td.button{
+        font-size: 12px !important;
 
+        /* display: grid;
+        grid-template-columns: 50% 50%; */
+    }
+    .editBtn .deleteBtn .searchBtn{
+        font-size: 10px !important;
+    }
 
     .button{ 
     background-color: rgb(92, 88, 92); 
     color: rgb(238, 229, 217);
     text-align: center;
     padding: 4px; 
-    
+    font-size: 12px;
     border-radius: 3px;/*a mayor numero lo hace redondo*/
     border: 3px solid rgb(129, 111, 125);
    

@@ -99,7 +99,7 @@
                 required
               />
               <input
-                type="text"
+                type="textarea"
                 id="productDetails"
                 placeholder="Detalles del producto"
                 required
@@ -120,7 +120,7 @@
             </form>
           </div>
 
-          <button id="reset">Reset</button>
+          <!-- <button id="reset">Reset</button> -->
 
           <h2>Productos Cargados</h2>
           <div id="editFormContainer" style="display: none">
@@ -134,20 +134,16 @@
               <input type="number" id="editProductPrice" required />
               <label for="editProductStock">Stock:</label>
               <input type="number" id="editProductStock" required />
-              <button type="submit">Update Product</button>
+              <button type="submit" class="button" >Update Product</button>
             </form>
           </div>
 
           <div>
-            <input
-              id="searchProduct"
-              type="text"
-              placeholder="Buscar Producto"
-            />
-            <button id="searchBtn" type="submit">Buscar</button>
+            <input id="searchProduct" type="text" placeholder="Buscar Producto" />
+            <button id="searchBtn" class="button" type="submit">Buscar</button>
           </div>
 
-          <div id="containerProductos"></div>
+          <table id="containerProductos"></table>
         </div>
       </div>
     </main>
@@ -170,6 +166,7 @@
     <script src="./script/deleteProduct.js"></script>
     <script src="./script/updateProduct.js"></script>
     <script src="./script/searchProductName.js"></script>
+    <script src="https://kit.fontawesome.com/2e9c3f9d39.js" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
