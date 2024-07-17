@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     await addProduct(newProduct);
   });
-// "http://localhost:5000/api/products/active/"
+
   fetch("http://localhost:5000/api/products/active/")
     .then(response => {
       if (!response.ok) {
@@ -135,7 +135,8 @@ const renderProductos = (data) => {
         product.productDetails;
       document.getElementById("editProductPrice").value = product.productPrice;
       document.getElementById("editProductStock").value = product.productStock;
-      editFormContainer.style.display = "block";
+      // editFormContainer.style.display = "block";
+      editFormContainer.style.display = editFormContainer.style.display === "none" ? "block" : "none";
     });
   });
 

@@ -89,11 +89,13 @@
         <a href="./servicios.html" class="button">Volver</a>
         <h1>CarpeDiem</h1>
         <div class="main_container addProd">
-
-
           <!-- <button id="reset">Reset</button> -->
-
           <h2>Productos Cargados</h2>
+          <div>
+            <input id="searchProduct" type="text" placeholder="Buscar Producto" />
+            <button id="searchBtn" class="button" type="submit">Buscar</button>
+          </div>
+          </div>
           <div id="editFormContainer" style="display: none">
             <form id="editProductForm">
               <input type="hidden" id="editProductId" />
@@ -109,14 +111,11 @@
             </form>
           </div>
 
-          <div>
-            <input id="searchProduct" type="text" placeholder="Buscar Producto" />
-            <button id="searchBtn" class="button" type="submit">Buscar</button>
-          </div>
+
 
           <table id="containerProductos"></table>
-
-                    <button id="showFormBtn" class="button">Agregar Producto</button>
+        <div class="addProd">
+          <button id="showFormBtn" class="button">Agregar Producto</button>
           <div id="formContainer" style="display: none">
             <form id="addProductForm">
               <input
